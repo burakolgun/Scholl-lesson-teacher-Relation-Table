@@ -1,0 +1,97 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * egeders
+ *
+ * @ORM\Table(name="egeders")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\egedersRepository")
+ */
+class egeders
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="department_name", type="string", length=100, unique=true)
+     */
+    private $departmentName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="period", type="string", length=3)
+     */
+    private $period;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set departmentName
+     *
+     * @param string $departmentName
+     *
+     * @return egeders
+     */
+    public function setDepartmentName($departmentName)
+    {
+        $this->departmentName = $departmentName;
+
+        return $this;
+    }
+
+    /**
+     * Get departmentName
+     *
+     * @return string
+     */
+    public function getDepartmentName()
+    {
+        return $this->departmentName;
+    }
+
+    /**
+     * Set period
+     *
+     * @param string $period
+     *
+     * @return egeders
+     */
+    public function setPeriod($period)
+    {
+        $this->period = $period;
+
+        return $this;
+    }
+
+    /**
+     * Get period
+     *
+     * @return string
+     */
+    public function getPeriod()
+    {
+        return $this->period;
+    }
+}
+

@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <table class="table small">
+    <thead>
+    <tr>
+        <th>Sıra</th>
+        <th>Görevli Ad - Soyad</th>
+        <th>Görevlendirme</th>
+        <th>Ünvan</th>
+        <th>No</th>
+        <th><a href="{{ path('ogretim_gorevlisi_yarat') }}" class="btn btn-success btn-xs"> Öğretim Görevlisi Ekle </a> </th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for ogretmen in ogretmenler %}
+        <tr>
+            <td>{{ ogretmen.id }}</td>
+            <td>{{ ogretmen.gorevliAd }} {{ ogretmen.gorevliSoyad }} </td>
+            <td>{{ ogretmen.gorevlendirme }}</td>
+            <td>{{ ogretmen.gorevliUnvan }}</td>
+            <td>{{ ogretmen.gorevliNo }}</td>
+            <td>
+                <a href="/ogretmen_dersler/{{ ogretmen.id }}" class="btn btn-primary btn-xs">Görevlinin Dersleri</a>
+                <a href="/ogretmen_duzenle/{{ ogretmen.id }}" class="btn btn-warning btn-xs">Görevliyi Duzenle</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <table class="table small">
+        <thead class="">
+        <tr>
+            <th>Bölüm Adı</th>
+            <th>Bölüm Period</th>
+            <th><a href="{{ path('bolum_ekle') }}" class="btn btn-success btn-xs">Bolum Ekle </a> </th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for bolum in bolumler %}
+        <tr>
+            <td>{{ bolum.departmentName  }}</td>
+            <td>{{ bolum.period  | upper}}</td>
+            <td>
+            <a href="/bolum_detay/{{ bolum.id }}" class="btn btn-primary btn-xs">Bolum Dersleri</a>
+            <a href="/bolum_duzenle/{{ bolum.id }}" class="btn btn-warning btn-xs">Bolum Duzenle</a>
+            </td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>{% endblock %}
+
+
+

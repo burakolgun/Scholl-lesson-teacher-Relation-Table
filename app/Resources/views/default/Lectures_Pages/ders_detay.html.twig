@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Dersin Adı : {{ ders.dersAd | capitalize }} </th>
+            <th>İÖ / ÖÖ : {{ ders.dersPeriod | upper }} </th>
+            <th>Kod Numarası : {{ ders.dersKod | capitalize }} </th>
+            <th>Zorunlu / Seçmeli : {{ ders.zorunluveyasecmeli | capitalize }} </th>
+
+
+        </tr>
+        <tr>
+            <th>Dersi Veren Görevli :</th>
+            <th>Dersin Verildiği Bölüm :</th>
+            <th>Dersin Verildiği Dönem :
+                {% if (ders.dersDonem == 1 ) %}
+                    1.Dönem Güz
+                {% endif %}
+                {% if (ders.dersDonem == 2 ) %}
+                    1.Dönem Bahar
+                {% endif %}
+                {% if (ders.dersDonem == 3 ) %}
+                    2.Dönem Güz
+                {% endif %}
+                {% if (ders.dersDonem == 4 ) %}
+                    2.Dönem Bahar
+                {% endif %}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+         <td></td>
+        </tr>
+        </tbody>
+    </table>
+    <hr/>
+    <a class="btn btn-default" href="{{ path('dersler') }}">Derslere Geri Dön</a>
+
+
+
+
+{% endblock %}

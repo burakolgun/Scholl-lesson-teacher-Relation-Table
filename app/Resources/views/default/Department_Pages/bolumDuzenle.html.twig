@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+    <a href="/bolum_sil/{{ bolum.id }}" class="btn btn-danger btn-block">Bolum Sil</a>
+
+
+{% endblock %}

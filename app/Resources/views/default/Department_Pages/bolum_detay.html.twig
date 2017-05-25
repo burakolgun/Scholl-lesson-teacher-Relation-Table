@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <div class="row">
+
+        <div class="col-md-12 col-md-offset-0">    <a class="btn btn-success col-md-12"  href="{{ path('bolumler') }}">Bölümlere Geri Dön</a>
+        </div>
+        <hr/>
+
+    </div>
+
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Bölüm Adı : {{ bolum.departmentName | capitalize }} </th>
+
+            <!-- bolum periodunun anlasilir olmasi icin -->
+
+            <th>Bölüm Period :
+                {% if bolum.period == "oo" %}
+                    Örgün Öğretim
+                {% elseif bolum.period == io %}
+                    İkinci Öğretim
+                    {% else %}
+                        {{ bolum.period }}
+                {% endif %}</th>
+
+            <th>Toplam Ders Sayisi {{ bolum.dersler.count }}</th>
+
+        </tr>
+        <tr>
+            <th>Ders Adı</th>
+            <th>Zorunlu/Seçmeli</th>
+            <th>Dönem</th>
+            <th>Dersin Öğretim Görevlisi</th>
+        </tr>
+        </thead>
+        <tbody>
+
+         <tr>
+
+             {% for ders in dersler %}
+             <tr>
+                <td>{{ ders.dersAd }}</td>
+                <td>
+                {% if ders.zorunluveyasecmeli != "Zorunlu" %}
+                    <pre style="color: crimson">{{ ders.zorunluveyasecmeli }}</pre>
+                    {% else %}
+                        {{ ders.zorunluveyasecmeli }}
+                        {% endif %}
+                </td>
+             <td>{% if ders.dersDonem == 1 %}
+                     1/Güz
+                 {% endif %}
+                 {% if ders.dersDonem == 2 %}
+                     1/Bahar
+                 {% endif %}
+                 {% if ders.dersDonem == 3 %}
+                     2/Güz
+                 {% endif %}
+                 {% if ders.dersDonem == 4 %}
+                     2/Bahar
+                 {% endif %}
+
+             </td>
+             <td>
+
+
+             </td>
+             </tr>
+
+                {% endfor %}
+         </tr>
+
+
+
+
+        </tbody>
+    </table>
+    <hr/>
+
+
+
+
+{% endblock %}

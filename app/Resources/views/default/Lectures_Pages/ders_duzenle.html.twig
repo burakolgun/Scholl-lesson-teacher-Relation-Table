@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+    <a class="btn btn-danger btn-md btn-block" href="/dersler/ders/sil/{{ ders.id }}" class="btn btn-danger">Sil</a>
+
+
+{% endblock %}

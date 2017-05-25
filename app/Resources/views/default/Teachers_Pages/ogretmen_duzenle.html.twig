@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+    <a href="/ogretmen_sil/{{ ogretmen.id }}" class="btn btn-danger btn-md btn-block">Görevliyi Sil</a>
+
+
+{% endblock %}

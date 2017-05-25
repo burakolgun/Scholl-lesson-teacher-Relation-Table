@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="131abbee-d066-4533-8c67-0718a8e531dd" name="ders" url="http://sorubank2.ege.edu.tr">
+        <fileTransfer host="sorubank2.ege.edu.tr" port="22" rootFolder="/home/USERS3/e8015681" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Görevli Ad Soyad : {{ ogretmen.gorevliAd }}{{ ogretmen.gorevliSoyad }} </th>
+            <th>Görevlendirme : {{ ogretmen.gorevliUnvan }}</th>
+            <th>Ünvan : {{ ogretmen.gorevlendirme }}</th>
+            <th>No : {{ ogretmen.gorevliNo}}</th>
+            <th>Toplam Ders Sayısı : {{ ogretmen.dersler.count }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>Dersin Adı</th>
+            <th>Ders Kodu</th>
+            <th>Z/S</th>
+            <th>İO/OO</th>
+
+
+        </tr>
+        {% for ders in ogretmen.dersler %}
+
+            <tr>
+            <td>{{ ders.dersad }}</td>
+            <td>{{ ders.dersKod }}</td>
+            <td>{{ ders.zorunluveyasecmeli }}</td>
+            <td>{{ ders.dersperiod }}</td>
+
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <hr/>
+    <a class="btn btn-default" href="{{ path('ogretim_gorevlileri') }}">Öğretim Görevlilerine Geri Dön</a>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <table class="table table-hover small">
+       <thead>
+       <tr>
+       <th>Toplam Ders Sayisi= {{ i }}</th>
+       <th>    <a class="btn btn-success btn-md btn-block btn-xs" href="{{ path('ders_ekle') }}" > Ders Ekle </a>
+       </th>
+       </tr>
+       <tr>
+           <th>Dersin Adı</th>
+           <th>Dersin Kodu</th>
+           <th>Z/S</th>
+           <th>iö/öö</th>
+           <th>Dönem</th>
+           <th>Akts</th>
+           <th>Lab</th>
+           <th>Pratik</th>
+           <th>Teorik</th>
+           <th>Bölüm</th>
+           <th>Görevli</th>
+       </tr>
+       </thead>
+       <tbody>
+       {% for ders in dersler %}
+           <td>{{ ders.dersAd }}</td>
+           <td>{{ ders.dersKod }}</td>
+           <td>{{ ders.zorunluveyasecmeli }}</td>
+           <td>{{ ders.dersPeriod }}</td>
+           <td>{% if ders.dersDonem == 1 %}
+                   1/Güz
+                {% endif %}
+               {% if ders.dersDonem == 2 %}
+                   1/Bahar
+               {% endif %}
+               {% if ders.dersDonem == 3 %}
+                   2/Güz
+               {% endif %}
+               {% if ders.dersDonem == 4 %}
+                   2/Bahar
+               {% endif %}
+
+           </td>
+           <td>{{ ders.akts}}</td>
+           <td>{{ ders.labpuan}}</td>
+           <td>{{ ders.pratikpuan}}</td>
+           <td>{{ ders.teoripuan}}</td>
+
+           <td>
+               <!-- Dersin Hangi Bolumde Verildigini Bulmak icin-->
+            {% for bolum in bolumler %}
+                {% if bolum.id == ders.bolumid %}
+                    {{ bolum.departmentName }}
+                {% endif %}
+
+            {% endfor %}
+
+
+           </td>
+           {% for ogretmen in ders.ogretmenler %}
+               <td>
+           {{ ogretmen.gorevliAd }}
+           {{ ogretmen.gorevliSoyad }}
+           </td>
+{% endfor %}
+           <td class="">
+               <a href="/dersler/ders/detay/{{ ders.id }}" class="btn btn-primary btn-xs">Detay</a>
+               <a href="/dersler_ders/duzenle/{{ ders.id }}" class="btn btn-warning btn-xs">Düzenle</a>
+           </td>
+
+       </tr>
+       {% endfor %}
+        </tbody>
+
+   </table>
+{% endblock %}
