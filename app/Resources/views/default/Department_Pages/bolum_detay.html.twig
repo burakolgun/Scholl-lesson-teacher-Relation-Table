@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-
+{% set toplam_uygulama = 0 %}
+{% set toplam_teori = 0 %}
     <div class="row">
 
         <a class="btn btn-success col-md-6"  href="{{ path('bolumler') }}">Bölümlere Geri Dön</a>
@@ -32,8 +33,9 @@
         </tr>
         <tr>
             <th>Ders Adı</th>
-            <th>Zorunlu/Seçmeli</th>
-            <th>Dönem</th>
+            <th>Ders-No</th>
+            <th>Teorik</th>
+            <th>Uygulama</th>
             <th>Öğretim Görevlisi</th>
         </tr>
         </thead>
@@ -46,13 +48,18 @@
 
                 <td>{{ ders.dersAd }}</td>
                 <td>
-                {% if ders.zorunluveyasecmeli != "Zorunlu" %}
+                {# Kaldirildi
+                    {% if ders.zorunluveyasecmeli != "Zorunlu" %}
                     <pre style="color: crimson">{{ ders.zorunluveyasecmeli }}</pre>
                     {% else %}
                         {{ ders.zorunluveyasecmeli }}
                         {% endif %}
+                 #}
+                    {{ ders.derskod }}
                 </td>
-             <td>{% if ders.dersDonem == 1 %}
+             <td>
+                 {# Kaldirildi
+                 {% if ders.dersDonem == 1 %}
                      1/Güz
                  {% endif %}
                  {% if ders.dersDonem == 2 %}
@@ -64,13 +71,19 @@
                  {% if ders.dersDonem == 4 %}
                      2/Bahar
                  {% endif %}
-
+                 #}
+                    {{ ders.teoripuan }}
              </td>
+             <td>{{ ders.pratikpuan }}</td>
              <td>
+
                  {% set controller = true %}
                  {% for ogretmen in ders.ogretmenler %}
                     {% set controller = false %}
                      {{ ogretmen.gorevliAd }} {{ ogretmen.gorevliSoyad }}
+                     {% set toplam_teori = toplam_teori + ders.teoripuan %}
+                     {% set toplam_uygulama = toplam_uygulama +  ders.pratikpuan %}
+
                  {% endfor %}
                  {% if controller == true %}
                      <a class="btn btn-primary col-md-12"  href="">Görevli Ekle</a>
@@ -81,13 +94,24 @@
              </tr>
 
                 {% endfor %}
-         </tr>
 
 
 
 
         </tbody>
     </table>
+    <div class="row" >
+        <div class="col-xs-3">
+            <h3>Toplam Teori: {{ toplam_teori }} </h3>
+        </div>
+        <div class="col-xs-3">
+            <h3>Toplam Uygulama: {{ toplam_uygulama }} </h3>
+        </div>
+        <div class="col-xs-6">
+            <h3>Derslerin Toplam Uygulama ve Teori Ders Saatileri: {{ toplam_uygulama + toplam_teori }} </h3>
+        </div>
+
+    </div>
     <hr/>
 
 
