@@ -8,6 +8,7 @@ use AppBundle\Entity\bolumdb;
 use AppBundle\Entity\derslerdb;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\HttpFoundation\Request;
 
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -112,16 +113,25 @@ class BolumlerController extends Controller
                    ->find($id);
                $dersler = $bolum->getDersler();
 
+            //Bolume Yeni Ders Eklemek Icin
 
 
 
 
 
-               return $this->render(':default/Department_Pages:bolum_detay.html.twig',
+
+
+
+
+
+
+
+            return $this->render(':default/Department_Pages:bolum_detay.html.twig',
                    array(
                        'bolum' => $bolum,
                        'dersler' => $dersler
                    ));
+
         }
 
         /**
@@ -206,16 +216,17 @@ class BolumlerController extends Controller
              * @Route("/bolum_sil/{id}" , name="bolum_sil")
              */
             public function departmentDeleteAction($id)
-        {
-            $em = $this ->getDoctrine() ->getManager();
-            $bolum = $em ->getRepository('AppBundle:bolumdb')->find($id);
-            $em->remove($bolum);
-            $em->flush();
+            {
+                $em = $this->getDoctrine()->getManager();
+                $bolum = $em->getRepository('AppBundle:bolumdb')->find($id);
+                $em->remove($bolum);
+                $em->flush();
 
-            $this->addFlash('error','Bolum Silindi');
-            return $this -> redirectToRoute('bolumler');
+                $this->addFlash('error', 'Bolum Silindi');
 
-        }
+                return $this->redirectToRoute('bolumler');
+
+            }
 
 
 

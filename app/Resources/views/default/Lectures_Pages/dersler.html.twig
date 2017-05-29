@@ -18,8 +18,7 @@
            <th>Lab</th>
            <th>Pratik</th>
            <th>Teorik</th>
-           <th>Bölüm</th>
-           <th>Görevli</th>
+x           <th>Görevli</th>
        </tr>
        </thead>
        <tbody>
@@ -47,17 +46,17 @@
            <td>{{ ders.pratikpuan}}</td>
            <td>{{ ders.teoripuan}}</td>
 
-           <td>
-               <!-- Dersin Hangi Bolumde Verildigini Bulmak icin-->
+
+              {#  <td>  Dersin Hangi Bolumde Verildigini Bulmak icin
             {% for bolum in bolumler %}
                 {% if bolum.id == ders.bolumid %}
                     {{ bolum.departmentName }}
                 {% endif %}
+            {% endfor %}   </td>
+            #}
 
-            {% endfor %}
 
 
-           </td>
            {% for ogretmen in ders.ogretmenler %}
                <td>
            {{ ogretmen.gorevliAd }}
