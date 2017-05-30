@@ -8,7 +8,8 @@
         <th>Görevlendirme</th>
         <th>Ünvan</th>
         <th>No</th>
-        <th><a href="{{ path('ogretim_gorevlisi_yarat') }}" class="btn btn-success btn-xs"> Öğretim Görevlisi Ekle </a> </th>
+        <th colspan="2"><a href="{{ path('ogretim_gorevlisi_yarat') }}" class="btn btn-success" style="width:100%;"> Öğretim Görevlisi Ekle </a> </th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
@@ -16,14 +17,18 @@
         <tr>
             <td>{{ ogretmen.id }}</td>
             <td>{{ ogretmen.gorevliAd }} {{ ogretmen.gorevliSoyad }} </td>
-            <td>{{ ogretmen.gorevlendirme }}</td>
+            <td>{{ ogretmen.gorevlendirme | upper }}</td>
             <td>{{ ogretmen.gorevliUnvan }}</td>
             <td>{{ ogretmen.gorevliNo }}</td>
             <td>
-                <a href="/ogretmen_dersler/{{ ogretmen.id }}" class="btn btn-primary btn-xs">Görevlinin Dersleri</a>
-                <a href="/ogretmen_duzenle/{{ ogretmen.id }}" class="btn btn-warning btn-xs">Görevliyi Duzenle</a>
+                <a href="/ogretmen_dersler/{{ ogretmen.id }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 col-xl-12">Görevlinin Dersleri</a>
+            </td>
+            <td>
+                <a href="/ogretmen_duzenle/{{ ogretmen.id }}" class="btn btn-warning btn-sm col-xs-12 col-sm-12 col-md-12 col-xl-12" >Görevliyi Düzenle</a>
             </td>
         </tr>
     {% endfor %}
     </tbody>
-    </table>{% endblock %}
+    </table>
+    {% endblock %}
+
