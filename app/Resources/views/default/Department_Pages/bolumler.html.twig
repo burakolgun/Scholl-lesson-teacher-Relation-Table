@@ -5,7 +5,7 @@
         <tr>
             <th>Bölüm Adı</th>
             <th>Bölüm Period</th>
-            <th><a href="{{ path('bolum_ekle') }}" class="btn btn-success btn-xs">Bolum Ekle </a> </th>
+            <th colspan="2"><a href="{{ path('bolum_ekle') }}" class="btn btn-success btn-sm" style="width:100%;">Bölüm Ekle </a> </th>
         </tr>
         </thead>
         <tbody>
@@ -14,8 +14,10 @@
             <td>{{ bolum.departmentName  }}</td>
             <td>{{ bolum.period  | upper}}</td>
             <td>
-            <a href="/bolum_detay/{{ bolum.id }}" class="btn btn-primary btn-xs">Bolum Dersleri</a>
-            <a href="/bolum_duzenle/{{ bolum.id }}" class="btn btn-warning btn-xs">Bolum Duzenle</a>
+            <a href="/bolum_detay/{{ bolum.id }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">Bölüm Dersleri</a>
+        </td>
+        <td>
+            <a href="/bolum_duzenle/{{ bolum.id }}" class="btn btn-warning btn-sm col-xs-12 col-sm-12 col-md-12 ">Bölüm Düzenle</a>
             </td>
         </tr>
         {% endfor %}
