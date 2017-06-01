@@ -199,4 +199,38 @@ class ogretim_gorevlisidb
     {
         return $this->gorevliNo;
     }
+
+    /**
+     * Add dersler
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler(\AppBundle\Entity\derslerdb $dersler)
+    {
+        $this->dersler[] = $dersler;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler
+     */
+    public function removeDersler(\AppBundle\Entity\derslerdb $dersler)
+    {
+        $this->dersler->removeElement($dersler);
+    }
+
+    /**
+     * Get dersler
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler()
+    {
+        return $this->dersler;
+    }
 }

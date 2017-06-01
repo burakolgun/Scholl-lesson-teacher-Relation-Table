@@ -16,6 +16,7 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),  // assetler icin yuklendi 2.8 sonrasinda calisiyor
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
