@@ -1,24 +1,28 @@
 {% extends 'base.html.twig' %}
 {% block body %}
+  {% set control = 0 %}
 
     <table class="table table-hover small">
        <thead>
        <tr>
        <th>Toplam Ders Sayisi= {{ i }}</th>
-       <th>    <a class="btn btn-success btn-md btn-block btn-xs" href="{{ path('ders_ekle') }}" > Ders Ekle </a>
-       </th>
+       
        </tr>
        <tr>
-           <th>Dersin Adı</th>
-           <th>Dersin Kodu</th>
+           <th>Ders Adı</th>
+           <th>Ders No</th>
            <th>Z/S</th>
-           <th>iö/öö</th>
+           <th>İÖ/ÖÖ</th>
            <th>Dönem</th>
            <th>Akts</th>
            <th>Lab</th>
            <th>Pratik</th>
            <th>Teorik</th>
            <th>Görevli</th>
+           <th colspan="2">    
+        <a class="btn btn-success btn-md btn-block btn-sm" href="{{ path('ders_ekle') }}" > Ders Ekle </a>
+       </th>
+       <th></th>
        </tr>
        </thead>
        <tbody>
@@ -56,16 +60,22 @@
             #}
 
 
-
-           {% for ogretmen in ders.ogretmenler %}
-               <td>
-           {{ ogretmen.gorevliAd }}
-           {{ ogretmen.gorevliSoyad }}
-           </td>
-{% endfor %}
+  <td>
+    {% if ders.ogretmenler.count != 0 %}
+      {% for ogretmen in ders.ogretmenler %}
+        {{ ogretmen.gorevliAd }}
+        {{ ogretmen.gorevliSoyad }}
+      {% endfor %}
+    {% else %}
+      Atanmadı
+    {% endif %}
+       
+ </td>
            <td class="">
-               <a href="/dersler/ders/detay/{{ ders.id }}" class="btn btn-primary btn-xs">Detay</a>
-               <a href="/dersler_ders/duzenle/{{ ders.id }}" class="btn btn-warning btn-xs">Düzenle</a>
+               <a href="/dersler/ders/detay/{{ ders.id }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12">Detay</a>
+             </td>
+             <td>
+               <a href="/dersler_ders/duzenle/{{ ders.id }}" class="btn btn-warning btn-sm col-xs-12 col-sm-12 col-md-12">Düzenle</a>
            </td>
 
        </tr>
