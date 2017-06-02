@@ -1,3 +1,6 @@
+Dependency Injection için uğraşıyorum veri tekrarlarını gördüğünüzde kalp krizi geçirmemeniz için erken uyarı atayım dedim.  :) 
+========================
+
 Symfony Standard Edition
 ========================
 
