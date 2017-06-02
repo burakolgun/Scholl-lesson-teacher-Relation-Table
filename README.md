@@ -1,6 +1,25 @@
 Dependency Injection için uğraşıyorum veri tekrarlarını gördüğünüzde kalp krizi geçirmemeniz için erken uyarı atayım dedim.  :) 
 ========================
 
+
+--------------
+İlk Kurukum için ->
+--------------
+ * 'dbname' -> 'egeders'
+ * 1-> 'Composer' yüklü olmalı projeyi indirdikten sonra 'composer install' ile gerekli componentlerin yüklenmesi gerekir.
+
+ * 2-> 'php bin/console doctrine:database:create' => DB olusturulur veya kendiniz de egeders adinda bir db olusturabilirsiniz.
+
+ * 3-> 'php bin/console doctrine:generate:entities AppBundle' => tablolari olusturmak icin yazmaniz gerekir.
+
+ * 4-> 'php bin/console doctrine:schema:update --forcee' => degisiklikleri db iletmek icin yazmaniz gerekir.
+
+ * 5-> 'php bin/console server:run' komutu ile calistirabilirsiniz.
+
+
+
+
+
 Symfony Standard Edition
 ========================
 
