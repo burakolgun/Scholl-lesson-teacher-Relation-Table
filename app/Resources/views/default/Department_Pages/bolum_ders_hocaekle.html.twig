@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <table  class="table table-striped small">
+
+        <thead>
+        <tr>
+            <th>Görevlinin Adı</th>
+            <th></th>
+            <th>Görevlinin Adı</th>
+            <th></th>
+
+        </tr>
+        </thead>
+        <tbody id="">
+{% set trControl = 0 %}
+    {% for hoca in hocalar %}
+
+        {% if trControl < 1 %}
+            <tr>
+        <td>{{ hoca.gorevliAd }}  {{ hoca.gorevliSoyad }}</td>
+        <td>
+            <a class="btn btn-success btn-xs" href="/bolumler/detay/dersler/{{ bolum_id}}/{{ ders_id }}/{{ hoca.id }}">Ekle</a>
+        </td>
+            {% set trControl = trControl +1 %}
+        {% else %}
+            <td>{{ hoca.gorevliAd }}  {{ hoca.gorevliSoyad }}</td>
+            {% set trControl = 0 %}
+            <td>
+                <a class="btn btn-success btn-xs" href="/bolumler/detay/dersler/{{ bolum_id}}/{{ ders_id }}/{{ hoca.id }}">Ekle</a>
+            </td>
+
+            </tr>
+        {% endif %}
+
+
+
+    {% endfor %}
+        </tbody>
+    </table>
+
+
+
+
+{% endblock %}

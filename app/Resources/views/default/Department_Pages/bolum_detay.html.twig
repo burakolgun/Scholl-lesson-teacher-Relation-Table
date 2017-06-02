@@ -83,10 +83,10 @@
                      {{ ogretmen.gorevliAd }} {{ ogretmen.gorevliSoyad }}
                      {% set toplam_teori = toplam_teori + ders.teoripuan %}
                      {% set toplam_uygulama = toplam_uygulama +  ders.pratikpuan %}
-
+                     <a class="btn btn-danger" href="/bolumler/detay/dersler/gorevli/{{ ogretmen.id }}/{{ ders.id }}/{{ bolum.id }}">Sil</a>
                  {% endfor %}
                  {% if controller == true %}
-                     <a class="btn btn-primary col-md-12"  href="">Görevli Ekle</a>
+                     <a class="btn btn-primary col-md-12"  href="/bolumler/detay/dersler/{{ bolum.id }}/{{ ders.id }}">Görevli Ekle</a>
 
                  {% endif %}
 

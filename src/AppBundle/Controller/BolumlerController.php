@@ -6,6 +6,7 @@ use AppBundle\Entity\bolumdb;
 
 
 use AppBundle\Entity\derslerdb;
+use AppBundle\Entity\ogretim_gorevlisidb;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -227,6 +228,76 @@ class BolumlerController extends Controller
                 return $this->redirectToRoute('bolumler');
 
             }
+    /**
+     * @Route("/bolumler/detay/dersler/{bolum_id}/{ders_id}" , name="bolum_ders_ekle")
+     */
+    public function departmentAddLessonAction($bolum_id , $ders_id ,  Request $request)
+    {
+
+        $em = $this -> getDoctrine()->getRepository('AppBundle:ogretim_gorevlisidb');
+        $hocalar = $em ->findAll();
+
+
+
+
+
+
+
+
+        return $this->render('default/Department_Pages/bolum_ders_hocaekle.html.twig',array(
+            'hocalar' => $hocalar,
+            'bolum_id' => $bolum_id,
+            'ders_id' => $ders_id
+        ));
+    }
+
+    /**
+     * @Route("/bolumler/detay/dersler/{bolum_id}/{ders_id}/{hoca_id}" , name="hocaya_ders_ekle_on_function")
+     */
+
+
+
+
+    public function teacherLessonAddAction($bolum_id , $ders_id , $hoca_id)
+    {
+        $em = $this
+            ->getDoctrine()->getManager();
+        $hoca = $em ->find('AppBundle:ogretim_gorevlisidb',$hoca_id);
+
+        $ders = $em ->find('AppBundle:derslerdb' , $ders_id);
+
+        $hoca ->addDersler($ders);
+
+        $em ->persist($ders);
+        $em ->flush();
+
+        return $this->redirect('http://localhost:8000/bolum_detay/'.$bolum_id);
+
+    }
+
+    /**
+     * @Route("/bolumler/detay/dersler/gorevli/{hoca_id}/{ders_id}/{bolum_id}" , name="dersten_hoca_sil")
+     */
+
+    public function teachersLessonDeleteAction($hoca_id , $ders_id , $bolum_id)
+    {
+
+        $em = $this
+            ->getDoctrine()->getManager();
+        $hoca = $em ->find('AppBundle:ogretim_gorevlisidb',$hoca_id);
+
+        $ders = $em ->find('AppBundle:derslerdb' , $ders_id);
+
+        $hoca ->removeDersler($ders);
+
+        $em ->persist($ders);
+        $em ->flush();
+
+        return $this->redirect('http://localhost:8000/bolum_detay/'.$bolum_id);
+
+
+    }
+
 
 
 
