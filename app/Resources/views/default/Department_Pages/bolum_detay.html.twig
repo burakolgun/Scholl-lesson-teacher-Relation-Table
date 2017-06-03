@@ -4,15 +4,14 @@
 {% set toplam_teori = 0 %}
     <div class="row">
 
-        <a class="btn btn-success col-md-6"  href="{{ path('bolumler') }}">Bölümlere Geri Dön</a>
-        <a class="btn btn-primary col-md-6"  href="">Bölüme Ders Ekle</a>
+        <a class="btn btn-success col-xs-2 col-sm-2 col-md-2" style="margin-left:22px;"  href="{{ path('bolumler') }}">Bölümlere Geri Dön</a>
     </div>
         <hr/>
 
 
 
 
-    <table class="table">
+    <table class="table table-striped">
         <thead>
         <tr>
             <th>Bölüm Adı : {{ bolum.departmentName | capitalize }} </th>
@@ -37,6 +36,7 @@
             <th>Teorik</th>
             <th>Uygulama</th>
             <th>Öğretim Görevlisi</th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -83,11 +83,18 @@
                      {{ ogretmen.gorevliAd }} {{ ogretmen.gorevliSoyad }}
                      {% set toplam_teori = toplam_teori + ders.teoripuan %}
                      {% set toplam_uygulama = toplam_uygulama +  ders.pratikpuan %}
-                     <a class="btn btn-danger" href="/bolumler/detay/dersler/gorevli/{{ ogretmen.id }}/{{ ders.id }}/{{ bolum.id }}">Sil</a>
-                 {% endfor %}
-                 {% if controller == true %}
-                     <a class="btn btn-primary col-md-12"  href="/bolumler/detay/dersler/{{ bolum.id }}/{{ ders.id }}">Görevli Ekle</a>
+                        <td colspan="2">
+                     <a class="btn btn-danger col-xs-12 col-sm-12 col-md-12" href="/bolumler/detay/dersler/gorevli/{{ ogretmen.id }}/{{ ders.id }}/{{ bolum.id }}">Sil</a>
+                 </td>
 
+                 {% endfor %}
+                   {% if controller == true %}
+                    Atanmadı
+                     {% endif %}
+                 <td>
+                 {% if controller == true %}
+                     <a class="btn btn-primary col-xs-12 col-sm-12 col-md-12"  href="/bolumler/detay/dersler/{{ bolum.id }}/{{ ders.id }}">Görevli Ekle</a>
+</td>
                  {% endif %}
 
              </td>
@@ -100,15 +107,15 @@
 
         </tbody>
     </table>
-    <div class="row" >
+    <div class="row" style="border-top:1px solid #dcdcdc;">
         <div class="col-xs-3">
-            <h3>Toplam Teori: {{ toplam_teori }} </h3>
+            <h4><b>Toplam Teori:</b> {{ toplam_teori }} </h4>
         </div>
         <div class="col-xs-3">
-            <h3>Toplam Uygulama: {{ toplam_uygulama }} </h3>
+            <h4><b>Toplam Uygulama:</b> {{ toplam_uygulama }} </h4>
         </div>
         <div class="col-xs-6">
-            <h3>Derslerin Toplam Uygulama ve Teori Ders Saatileri: {{ toplam_uygulama + toplam_teori }} </h3>
+            <h4><b>Derslerin Toplam Uygulama ve Teori Ders Saatileri:</b> {{ toplam_uygulama + toplam_teori }} </h4>
         </div>
 
     </div>
