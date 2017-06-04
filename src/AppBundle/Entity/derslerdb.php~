@@ -106,11 +106,7 @@ class derslerdb
      */
     private $teoripuan;
 
-    /**
-     * @var int
-     * @ORM\Column(name="bolumid" , type="integer")
-     */
-    private $bolumid;
+
 
 
     /**
@@ -373,29 +369,6 @@ class derslerdb
         return $this->bolumler;
     }
 
-    /**
-     * Set bolumid
-     *
-     * @param integer $bolumid
-     *
-     * @return derslerdb
-     */
-    public function setBolumid($bolumid)
-    {
-        $this->bolumid = $bolumid;
-
-        return $this;
-    }
-
-    /**
-     * Get bolumid
-     *
-     * @return integer
-     */
-    public function getBolumid()
-    {
-        return $this->bolumid;
-    }
 
     /**
      * Add ogretmenler

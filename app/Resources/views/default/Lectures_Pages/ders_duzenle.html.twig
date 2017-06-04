@@ -5,7 +5,27 @@
     {{ form_start(form) }}
     {{ form_widget(form) }}
     {{ form_end(form) }}
-    <a class="btn btn-danger btn-md btn-block" href="/dersler/ders/sil/{{ ders.id }}" class="btn btn-danger">Sil</a>
+    <a id="sil" class="btn btn-danger btn-md btn-block" href="/dersler/ders/sil/{{ ders.id }}" class="btn btn-danger">Sil</a>
+    <a style="margin-top: 15px;" class=" btn btn-primary btn-md btn-block" href={{ path('dersler') }} >Geri</a>
 
+    <!-- Gorevli silinmeden once emin misiniz sorusu icin  -->
+    <script>
+        document.getElementById("sil").addEventListener("click", deleteAction); // id verilen butonun click olma durumu icin
+
+        function deleteAction(evt) { // click oldugunda cagirilacak fonksiyon
+
+            if(confirm("Emin misiniz?"))  // yes no cikarmak icin
+            {
+                alert('Silindi!');  // yes ise
+            }
+            else
+            {
+                evt.preventDefault();  // no ise vazgecmek icin
+            }
+
+
+        }
+
+    </script>
 
 {% endblock %}

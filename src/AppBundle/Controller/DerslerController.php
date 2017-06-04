@@ -89,12 +89,7 @@ class DerslerController extends Controller
                     'attr' =>
                         array('class' => 'form-control', 'style' => 'margin-bottom:15px'),
                 ))
-            ->add('bolumid' , TextType::class ,
-                array(
-                    'label' => 'Dersin Verildigi Bolum',
-                    'attr' =>
-                        array('class' => 'form-control', 'style' => 'margin-bottom:15px'),
-                ))
+
             ->add(
                 'save',
                 SubmitType::class,
@@ -119,7 +114,7 @@ class DerslerController extends Controller
             $labpuan = $form['labpuan']->getData();
             $pratikpuan = $form['pratikpuan']->getData();
             $teoripuan = $form['teoripuan']->getData();
-            $bolumid = $form['bolumid']->getData();
+
 
             $ders->setDersAd($ders_ad);
             $ders->setDersKod($ders_kod);
@@ -130,7 +125,7 @@ class DerslerController extends Controller
             $ders->setLabpuan($labpuan);
             $ders->setPratikpuan($pratikpuan);
             $ders->setTeoripuan($teoripuan);
-            $ders->setBolumid($bolumid);
+
 
 
             $em = $this->getDoctrine()->getManager();
@@ -195,7 +190,7 @@ class DerslerController extends Controller
         $ders->setLabpuan($ders->getLabpuan());
         $ders->setPratikpuan($ders->getPratikpuan());
         $ders->setTeoripuan($ders->getTeoripuan());
-        $ders->setBolumid($ders->getBolumid());
+
         $form = $this->createFormBuilder($ders)
             ->add('ders_ad' , TextType::class,
                 array(
@@ -242,12 +237,7 @@ class DerslerController extends Controller
                     'attr' =>
                         array('class' => 'form-control', 'style' => 'margin-bottom:15px'),
                 ))
-            ->add('bolumid' , TextType::class ,
-                array(
-                    'label'=> 'Dersin Verildigi Bolum',
-                    'attr' =>
-                        array('class' => 'form-control', 'style' => 'margin-bottom:15px'),
-                ))
+
             ->add(
                 'save',
                 SubmitType::class,
@@ -286,7 +276,7 @@ class DerslerController extends Controller
             $ders->setLabpuan($labpuan);
             $ders->setPratikpuan($pratikpuan);
             $ders->setTeoripuan($teoripuan);
-            $ders->setBolumid($bolumid);
+
 
             $em->flush();
             $this->addFlash(
