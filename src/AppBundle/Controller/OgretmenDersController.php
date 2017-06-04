@@ -6,6 +6,7 @@ use AppBundle\Entity\ogretim_gorevlisidb;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\ButtonType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
@@ -39,6 +40,7 @@ class OgretmenDersController extends Controller
                 'gorevli_ad',
                 TextType::class,
                 array(
+                    'label' => 'Görevli İsim' ,
                     'attr' =>
                         array('class' => 'form-control', 'style' => 'margin-bottom:15px'),
                 )
@@ -47,22 +49,63 @@ class OgretmenDersController extends Controller
                 'gorevli_soyad',
                 TextType::class,
                 array(
+                    'label' => 'Görevli Soyad' ,
                     'attr' =>
                         array('class' => 'form-control', 'style' => 'margin-bottom:15px'),
                 )
             )
             ->add(
                 'gorevli_unvan',
-                TextType::class,
+                ChoiceType::class,
                 array(
+                    'choices' => array(
+                        'Profesör Doktor' => 'Prof.Dr.',
+                        'Profesör' => 'Prof.',
+                        'Doçent Doktor' => 'Doç.Dr.',
+                        'Doçent' => 'Doç.',
+                        'Yardımcı Doçent Doktor' => 'Yrd.Doç.Dr.',
+                        'Yardımcı Doçent' => 'Yrd.Doç.',
+                        'Araştırma Görevlisi Doktor' => 'Arş.Gör.Dr.',
+                        'Araştırma Görevlisi' => 'Arş.Gör.',
+                        'Öğretim Üyesi' => 'Öğr.Ü.',
+                        'Öğretim Görevlisi' => 'Öğr.Gör',
+                        'Okutman' => 'Okt',
+                        'Çevirmen' => 'Çev',
+                        'Öğretim Planlamacısı' => 'Öğr.Pl.',
+                        'Uzman' => 'Uz'
+
+                    ) ,
+                    'label' => 'Görevli Ünvan' ,
                     'attr' =>
                         array('class' => 'form-control', 'style' => 'margin-bottom:15px'),
                 )
             )
             ->add(
                 'gorevlendirme',
-                TextType::class,
+                ChoiceType::class,
                 array(
+                    'choices' => array(
+                        '40/a' => '40/a',
+                        '31' => '31',
+                        'MYO' => 'myo',
+                        'Fakülte' => 'Fakülte',
+                        'Diş Hekimliği Fakültesi' => 'Diş Hekimliği Fakültesi',
+                        'Eczacılık Fakültesi' => 'Eczacılık Fakültesi',
+                        'Edebiyat Fakültesi' => 'Edebiyat Fakültesi',
+                        'Eğitim Fakültesi' => 'Eğitim Fakültesi',
+                        'Fen Fakültesi' => 'Fen Fakültesi',
+                        'Güzel Sanatlar, Tasarım ve Mimarlık Fakültesi' => 'Güzel Sanatlar, Tasarım ve Mimarlık Fakültesi',
+                        'Hemşirelik Fakültesi' => 'Hemşirelik Fakültesi',
+                        'İktisadi ve İdari Bilimler Fakültesi' => 'İktisadi ve İdari Bilimler Fakültesi',
+                        'İletişim Fakültesi' => 'İletişim Fakültesi',
+                        'Mühendislik Fakültesi' => 'Mühendislik Fakültesi',
+                        'Sağlık Bilimleri Fakültesi' => 'Sağlık Bilimleri Fakültesi',
+                        'Spor Bilimleri Fakültesi' => 'Spor Bilimleri Fakültesi',
+                        'Su Ürünleri Fakültesi' => 'Su Ürünleri Fakültesi',
+                        'Tıp Fakültesi' => 'Tıp Fakültesi',
+                        'Ziraat Fakültesi' => 'Ziraat Fakültesi',
+                    ),
+                    'label' => 'Görevlendirme' ,
                     'attr' =>
                         array('class' => 'form-control', 'style' => 'margin-bottom:15px'),
                 )
@@ -70,7 +113,9 @@ class OgretmenDersController extends Controller
             ->add(
                 'gorevli_no',
                 TextType::class,
+
                 array(
+                    'label' => 'Görevli No' ,
                     'attr' =>
                         array('class' => 'form-control', 'style' => 'margin-bottom:15px'),
                 )

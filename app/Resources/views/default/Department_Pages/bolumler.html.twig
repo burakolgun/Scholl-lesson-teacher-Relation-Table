@@ -12,7 +12,7 @@
         {% for bolum in bolumler %}
         <tr>
             <td>{{ bolum.departmentName  }}</td>
-            <td>{{ bolum.period  | upper}}</td>
+            <td><b>{{ bolum.period  | upper}}</b></td>
             <td>
             <a href="/bolum_detay/{{ bolum.id }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">Bölüm Dersleri</a>
         </td>

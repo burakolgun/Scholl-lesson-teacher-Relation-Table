@@ -18,6 +18,7 @@
             <th>Ders No</th>
             <th>Teorik Puani</th>
             <th>Uygulama Puani</th>
+            <th>Dersin Verildiği Bölüm</th>
 
 
         </tr>
@@ -30,6 +31,10 @@
             <td>{{ ders.dersKod }}</td>
             <td>{{ ders.teoripuan }}</td>
             <td>{{ ders.pratikpuan }}</td>
+            <td>{% for bolum in ders.bolumler %}
+              {{ bolum.departmentName }}
+            {% endfor %}
+            </td>
 
         </tr>
         {% endfor %}
