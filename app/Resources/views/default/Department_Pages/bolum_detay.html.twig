@@ -84,7 +84,7 @@
                      {% set toplam_teori = toplam_teori + ders.teoripuan %}
                      {% set toplam_uygulama = toplam_uygulama +  ders.pratikpuan %}
                         <td colspan="2">
-                     <a class="btn btn-danger col-xs-12 col-sm-12 col-md-12" href="/bolumler/detay/dersler/gorevli/{{ ogretmen.id }}/{{ ders.id }}/{{ bolum.id }}">Sil</a>
+                     <a id="sil"   class="btn btn-danger col-xs-12 col-sm-12 col-md-12" href="/bolumler/detay/dersler/gorevli/{{ ogretmen.id }}/{{ ders.id }}/{{ bolum.id }}">Sil</a>
                  </td>
 
                  {% endfor %}
@@ -120,6 +120,26 @@
 
     </div>
     <hr/>
+
+    <!-- Gorevli silinmeden once emin misiniz sorusu icin  -->
+    <script>
+        document.getElementById("sil").addEventListener("click", deleteAction); // id verilen butonun click olma durumu icin
+
+        function deleteAction(evt) { // click oldugunda cagirilacak fonksiyon
+
+            if(confirm("Emin misiniz?"))  // yes no cikarmak icin
+            {
+                alert('Silindi!');  // yes ise
+            }
+            else
+            {
+                evt.preventDefault();  // no ise vazgecmek icin
+            }
+
+
+        }
+
+    </script>
 
 
 
