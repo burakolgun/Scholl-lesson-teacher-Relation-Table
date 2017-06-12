@@ -14,8 +14,17 @@
             <td>{{ bolum.departmentName  }}</td>
             <td><b>{{ bolum.period  | upper}}</b></td>
             <td>
-            <a href="/bolum_detay/{{ bolum.id }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">Bölüm Dersleri</a>
+            <a href="/bolum_detay/{{ bolum.id }}/1" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">1.Sınıf Güz</a>
         </td>
+            <td>
+                <a href="/bolum_detay/{{ bolum.id }}/2" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">1.Sınıf Bahar</a>
+            </td>
+            <td>
+                <a href="/bolum_detay/{{ bolum.id }}/3" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">2.Sınıf Güz</a>
+            </td>
+            <td>
+                <a href="/bolum_detay/{{ bolum.id }}/4" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">2.Sınıf Bahar</a>
+            </td>
         <td>
             <a href="/bolum_duzenle/{{ bolum.id }}" class="btn btn-warning btn-sm col-xs-12 col-sm-12 col-md-12 ">Bölüm Düzenle</a>
             </td>

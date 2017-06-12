@@ -105,9 +105,9 @@ class BolumlerController extends Controller
     }
 
         /**
-         * @Route("/bolum_detay/{id}" , name="bolum_detay")
+         * @Route("/bolum_detay/{id}/{donem_id}" , name="bolum_detay")
          */
-        public function bolumDetayAction($id, Request $request)
+        public function bolumDetayAction($id,$donem_id, Request $request)
         {
                $bolum = $this->getDoctrine()
                    ->getRepository('AppBundle:bolumdb')
@@ -130,7 +130,8 @@ class BolumlerController extends Controller
             return $this->render(':default/Department_Pages:bolum_detay.html.twig',
                    array(
                        'bolum' => $bolum,
-                       'dersler' => $dersler
+                       'dersler' => $dersler,
+                       'donem_id' => $donem_id
                    ));
 
         }
