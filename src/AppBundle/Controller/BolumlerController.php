@@ -267,12 +267,14 @@ class BolumlerController extends Controller
 
         $ders = $em ->find('AppBundle:derslerdb' , $ders_id);
 
+        $donem = $ders->getDersDonem();
+
         $hoca ->addDersler($ders);
 
         $em ->persist($ders);
         $em ->flush();
 
-        return $this->redirect('http://localhost:8000/bolum_detay/'.$bolum_id);
+        return $this->redirect('http://localhost:8000/bolum_detay/'.$bolum_id.'/'.$donem);
 
     }
 
@@ -288,13 +290,14 @@ class BolumlerController extends Controller
         $hoca = $em ->find('AppBundle:ogretim_gorevlisidb',$hoca_id);
 
         $ders = $em ->find('AppBundle:derslerdb' , $ders_id);
+        $donem = $ders->getDersDonem();
 
         $hoca ->removeDersler($ders);
 
         $em ->persist($ders);
         $em ->flush();
 
-        return $this->redirect('http://localhost:8000/bolum_detay/'.$bolum_id);
+        return $this->redirect('http://localhost:8000/bolum_detay/'.$bolum_id.'/'.$donem);
 
 
     }
