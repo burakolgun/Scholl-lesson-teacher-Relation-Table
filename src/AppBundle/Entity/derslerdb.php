@@ -3,6 +3,10 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
+
+
+
 
 /**
  * derslerdb
@@ -20,7 +24,7 @@ class derslerdb
     private $bolumler;
 
     public function __construct() {
-        $this->bolumler = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->bolumler = new ArrayCollection();
     }
     /**
      * Many ders have Many ogretmen.
@@ -29,7 +33,7 @@ class derslerdb
     private $ogretmenler_2017_bahar;
 
     public function _construct() {
-        $this->ogretmenler_2017_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2017_bahar = new ArrayCollection();
     }
     /**
      * Many ders have Many ogretmen.
@@ -38,7 +42,7 @@ class derslerdb
     private $ogretmenler_2017_guz;
 
     public function _constructer() {
-        $this->ogretmenler_2017_guz = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2017_guz = new ArrayCollection();
     }
 
     /**
@@ -48,7 +52,7 @@ class derslerdb
     private $ogretmenler_2018_bahar;
 
     public function _construct1() {
-        $this->ogretmenler_2018_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2018_bahar = new ArrayCollection();
     }
 
     /**
@@ -58,7 +62,7 @@ class derslerdb
     private $ogretmenler_2018_guz;
 
     public function _constructer2() {
-        $this->ogretmenler_2018_guz = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2018_guz = new ArrayCollection();
     }
 
     /**
@@ -68,7 +72,7 @@ class derslerdb
     private $ogretmenler_2019_bahar;
 
     public function _construct2() {
-        $this->ogretmenler_2019_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2019_bahar = new ArrayCollection();
     }
 
 
@@ -79,7 +83,7 @@ class derslerdb
     private $ogretmenler_2019_guz;
 
     public function _constructer3() {
-        $this->ogretmenler_2019_guz = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2019_guz = new ArrayCollection();
     }
 
     /**
@@ -89,7 +93,7 @@ class derslerdb
     private $ogretmenler_2020_bahar;
 
     public function _construct3() {
-        $this->ogretmenler_2020_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2020_bahar = new ArrayCollection();
     }
 
 
@@ -100,7 +104,7 @@ class derslerdb
     private $ogretmenler_2020_guz;
 
     public function _constructer4() {
-        $this->ogretmenler_2020_guz = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2020_guz = new ArrayCollection();
     }
 
     /**
@@ -110,7 +114,7 @@ class derslerdb
     private $ogretmenler_2021_bahar;
 
     public function _construct4() {
-        $this->ogretmenler_2021_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2021_bahar = new ArrayCollection();
     }
 
 
@@ -121,7 +125,7 @@ class derslerdb
     private $ogretmenler_2021_guz;
 
     public function _constructer5() {
-        $this->ogretmenler_2021_guz = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2021_guz = new ArrayCollection();
     }
 
     /**
@@ -131,7 +135,7 @@ class derslerdb
     private $ogretmenler_2022_bahar;
 
     public function _construct6() {
-        $this->ogretmenler_2022_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2022_bahar = new ArrayCollection();
     }
 
 
@@ -142,7 +146,7 @@ class derslerdb
     private $ogretmenler_2022_guz;
 
     public function _constructer6() {
-        $this->ogretmenler_2022_guz = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2022_guz = new ArrayCollection();
     }
 
 
@@ -153,7 +157,7 @@ class derslerdb
     private $ogretmenler_2023_bahar;
 
     public function _construct7() {
-        $this->ogretmenler_2023_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2023_bahar = new ArrayCollection();
     }
 
 
@@ -164,7 +168,7 @@ class derslerdb
     private $ogretmenler_2023_guz;
 
     public function _constructer7() {
-        $this->ogretmenler_2023_guz = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2023_guz = new ArrayCollection();
     }
 
 
@@ -175,7 +179,7 @@ class derslerdb
     private $ogretmenler_2024_bahar;
 
     public function _construct8() {
-        $this->ogretmenler_2024_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2024_bahar = new ArrayCollection();
     }
 
 
@@ -186,7 +190,7 @@ class derslerdb
     private $ogretmenler_2024_guz;
 
     public function _constructer8() {
-        $this->ogretmenler_2024_guz = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2024_guz = new ArrayCollection();
     }
 
 
@@ -197,7 +201,7 @@ class derslerdb
     private $ogretmenler_2025_bahar;
 
     public function _construct9() {
-        $this->ogretmenler_2025_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2025_bahar = new ArrayCollection();
     }
 
 
@@ -208,7 +212,7 @@ class derslerdb
     private $ogretmenler_2025_guz;
 
     public function _constructer9() {
-        $this->ogretmenler_2025_guz = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2025_guz = new ArrayCollection();
     }
 
 
@@ -522,7 +526,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addBolumler(\AppBundle\Entity\bolumdb $bolumler)
+    public function addBolumler(bolumdb $bolumler)
     {
         $this->bolumler[] = $bolumler;
 
@@ -550,39 +554,7 @@ class derslerdb
     }
 
 
-    /**
-     * Add ogretmenler
-     *
-     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler
-     *
-     * @return derslerdb
-     */
-    public function addOgretmenler(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler)
-    {
-        $this->ogretmenler[] = $ogretmenler;
 
-        return $this;
-    }
-
-    /**
-     * Remove ogretmenler
-     *
-     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler
-     */
-    public function removeOgretmenler(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler)
-    {
-        $this->ogretmenler->removeElement($ogretmenler);
-    }
-
-    /**
-     * Get ogretmenler
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getOgretmenler()
-    {
-        return $this->ogretmenler;
-    }
 
     /**
      * Add ogretmenler2017Bahar
@@ -603,7 +575,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Bahar
      */
-    public function removeOgretmenler2017Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Bahar)
+    public function removeOgretmenler2017Bahar(ogretim_gorevlisidb $ogretmenler2017Bahar)
     {
         $this->ogretmenler_2017_bahar->removeElement($ogretmenler2017Bahar);
     }
@@ -625,7 +597,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2017Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Guz)
+    public function addOgretmenler2017Guz(ogretim_gorevlisidb $ogretmenler2017Guz)
     {
         $this->ogretmenler_2017_guz[] = $ogretmenler2017Guz;
 
@@ -637,7 +609,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Guz
      */
-    public function removeOgretmenler2017Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Guz)
+    public function removeOgretmenler2017Guz(ogretim_gorevlisidb $ogretmenler2017Guz)
     {
         $this->ogretmenler_2017_guz->removeElement($ogretmenler2017Guz);
     }
@@ -659,7 +631,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2018Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Bahar)
+    public function addOgretmenler2018Bahar(ogretim_gorevlisidb $ogretmenler2018Bahar)
     {
         $this->ogretmenler_2018_bahar[] = $ogretmenler2018Bahar;
 
@@ -671,7 +643,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Bahar
      */
-    public function removeOgretmenler2018Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Bahar)
+    public function removeOgretmenler2018Bahar(ogretim_gorevlisidb $ogretmenler2018Bahar)
     {
         $this->ogretmenler_2018_bahar->removeElement($ogretmenler2018Bahar);
     }
@@ -693,7 +665,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2018Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Guz)
+    public function addOgretmenler2018Guz(ogretim_gorevlisidb $ogretmenler2018Guz)
     {
         $this->ogretmenler_2018_guz[] = $ogretmenler2018Guz;
 
@@ -705,7 +677,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Guz
      */
-    public function removeOgretmenler2018Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Guz)
+    public function removeOgretmenler2018Guz(ogretim_gorevlisidb $ogretmenler2018Guz)
     {
         $this->ogretmenler_2018_guz->removeElement($ogretmenler2018Guz);
     }
@@ -727,7 +699,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2019Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Bahar)
+    public function addOgretmenler2019Bahar(ogretim_gorevlisidb $ogretmenler2019Bahar)
     {
         $this->ogretmenler_2019_bahar[] = $ogretmenler2019Bahar;
 
@@ -739,7 +711,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Bahar
      */
-    public function removeOgretmenler2019Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Bahar)
+    public function removeOgretmenler2019Bahar(ogretim_gorevlisidb $ogretmenler2019Bahar)
     {
         $this->ogretmenler_2019_bahar->removeElement($ogretmenler2019Bahar);
     }
@@ -761,7 +733,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2019Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Guz)
+    public function addOgretmenler2019Guz(ogretim_gorevlisidb $ogretmenler2019Guz)
     {
         $this->ogretmenler_2019_guz[] = $ogretmenler2019Guz;
 
@@ -773,7 +745,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Guz
      */
-    public function removeOgretmenler2019Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Guz)
+    public function removeOgretmenler2019Guz(ogretim_gorevlisidb $ogretmenler2019Guz)
     {
         $this->ogretmenler_2019_guz->removeElement($ogretmenler2019Guz);
     }
@@ -795,7 +767,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2020Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Bahar)
+    public function addOgretmenler2020Bahar(ogretim_gorevlisidb $ogretmenler2020Bahar)
     {
         $this->ogretmenler_2020_bahar[] = $ogretmenler2020Bahar;
 
@@ -807,7 +779,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Bahar
      */
-    public function removeOgretmenler2020Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Bahar)
+    public function removeOgretmenler2020Bahar(ogretim_gorevlisidb $ogretmenler2020Bahar)
     {
         $this->ogretmenler_2020_bahar->removeElement($ogretmenler2020Bahar);
     }
@@ -829,7 +801,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2020Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Guz)
+    public function addOgretmenler2020Guz(ogretim_gorevlisidb $ogretmenler2020Guz)
     {
         $this->ogretmenler_2020_guz[] = $ogretmenler2020Guz;
 
@@ -841,7 +813,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Guz
      */
-    public function removeOgretmenler2020Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Guz)
+    public function removeOgretmenler2020Guz(ogretim_gorevlisidb $ogretmenler2020Guz)
     {
         $this->ogretmenler_2020_guz->removeElement($ogretmenler2020Guz);
     }
@@ -863,7 +835,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2021Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Bahar)
+    public function addOgretmenler2021Bahar(ogretim_gorevlisidb $ogretmenler2021Bahar)
     {
         $this->ogretmenler_2021_bahar[] = $ogretmenler2021Bahar;
 
@@ -875,7 +847,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Bahar
      */
-    public function removeOgretmenler2021Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Bahar)
+    public function removeOgretmenler2021Bahar(ogretim_gorevlisidb $ogretmenler2021Bahar)
     {
         $this->ogretmenler_2021_bahar->removeElement($ogretmenler2021Bahar);
     }
@@ -897,7 +869,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2021Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Guz)
+    public function addOgretmenler2021Guz(ogretim_gorevlisidb $ogretmenler2021Guz)
     {
         $this->ogretmenler_2021_guz[] = $ogretmenler2021Guz;
 
@@ -909,7 +881,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Guz
      */
-    public function removeOgretmenler2021Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Guz)
+    public function removeOgretmenler2021Guz(ogretim_gorevlisidb $ogretmenler2021Guz)
     {
         $this->ogretmenler_2021_guz->removeElement($ogretmenler2021Guz);
     }
@@ -931,7 +903,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2022Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Bahar)
+    public function addOgretmenler2022Bahar(ogretim_gorevlisidb $ogretmenler2022Bahar)
     {
         $this->ogretmenler_2022_bahar[] = $ogretmenler2022Bahar;
 
@@ -943,7 +915,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Bahar
      */
-    public function removeOgretmenler2022Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Bahar)
+    public function removeOgretmenler2022Bahar(ogretim_gorevlisidb $ogretmenler2022Bahar)
     {
         $this->ogretmenler_2022_bahar->removeElement($ogretmenler2022Bahar);
     }
@@ -965,7 +937,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2022Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Guz)
+    public function addOgretmenler2022Guz(ogretim_gorevlisidb $ogretmenler2022Guz)
     {
         $this->ogretmenler_2022_guz[] = $ogretmenler2022Guz;
 
@@ -977,7 +949,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Guz
      */
-    public function removeOgretmenler2022Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Guz)
+    public function removeOgretmenler2022Guz(ogretim_gorevlisidb $ogretmenler2022Guz)
     {
         $this->ogretmenler_2022_guz->removeElement($ogretmenler2022Guz);
     }
@@ -999,7 +971,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2023Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Bahar)
+    public function addOgretmenler2023Bahar(ogretim_gorevlisidb $ogretmenler2023Bahar)
     {
         $this->ogretmenler_2023_bahar[] = $ogretmenler2023Bahar;
 
@@ -1011,7 +983,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Bahar
      */
-    public function removeOgretmenler2023Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Bahar)
+    public function removeOgretmenler2023Bahar(ogretim_gorevlisidb $ogretmenler2023Bahar)
     {
         $this->ogretmenler_2023_bahar->removeElement($ogretmenler2023Bahar);
     }
@@ -1033,7 +1005,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2023Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Guz)
+    public function addOgretmenler2023Guz(ogretim_gorevlisidb $ogretmenler2023Guz)
     {
         $this->ogretmenler_2023_guz[] = $ogretmenler2023Guz;
 
@@ -1045,7 +1017,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Guz
      */
-    public function removeOgretmenler2023Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Guz)
+    public function removeOgretmenler2023Guz(ogretim_gorevlisidb $ogretmenler2023Guz)
     {
         $this->ogretmenler_2023_guz->removeElement($ogretmenler2023Guz);
     }
@@ -1067,7 +1039,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2024Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Bahar)
+    public function addOgretmenler2024Bahar(ogretim_gorevlisidb $ogretmenler2024Bahar)
     {
         $this->ogretmenler_2024_bahar[] = $ogretmenler2024Bahar;
 
@@ -1079,7 +1051,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Bahar
      */
-    public function removeOgretmenler2024Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Bahar)
+    public function removeOgretmenler2024Bahar(ogretim_gorevlisidb $ogretmenler2024Bahar)
     {
         $this->ogretmenler_2024_bahar->removeElement($ogretmenler2024Bahar);
     }
@@ -1101,7 +1073,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2024Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Guz)
+    public function addOgretmenler2024Guz(ogretim_gorevlisidb $ogretmenler2024Guz)
     {
         $this->ogretmenler_2024_guz[] = $ogretmenler2024Guz;
 
@@ -1113,7 +1085,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Guz
      */
-    public function removeOgretmenler2024Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Guz)
+    public function removeOgretmenler2024Guz(ogretim_gorevlisidb $ogretmenler2024Guz)
     {
         $this->ogretmenler_2024_guz->removeElement($ogretmenler2024Guz);
     }
@@ -1135,7 +1107,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2025Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Bahar)
+    public function addOgretmenler2025Bahar(ogretim_gorevlisidb $ogretmenler2025Bahar)
     {
         $this->ogretmenler_2025_bahar[] = $ogretmenler2025Bahar;
 
@@ -1147,7 +1119,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Bahar
      */
-    public function removeOgretmenler2025Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Bahar)
+    public function removeOgretmenler2025Bahar(ogretim_gorevlisidb $ogretmenler2025Bahar)
     {
         $this->ogretmenler_2025_bahar->removeElement($ogretmenler2025Bahar);
     }
@@ -1169,7 +1141,7 @@ class derslerdb
      *
      * @return derslerdb
      */
-    public function addOgretmenler2025Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Guz)
+    public function addOgretmenler2025Guz(ogretim_gorevlisidb $ogretmenler2025Guz)
     {
         $this->ogretmenler_2025_guz[] = $ogretmenler2025Guz;
 
@@ -1181,7 +1153,7 @@ class derslerdb
      *
      * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Guz
      */
-    public function removeOgretmenler2025Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Guz)
+    public function removeOgretmenler2025Guz(ogretim_gorevlisidb $ogretmenler2025Guz)
     {
         $this->ogretmenler_2025_guz->removeElement($ogretmenler2025Guz);
     }

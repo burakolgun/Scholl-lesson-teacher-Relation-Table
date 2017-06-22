@@ -409,32 +409,7 @@ class ogretim_gorevlisidb
      *
      * @return ogretim_gorevlisidb
      */
-    public function addDersler(\AppBundle\Entity\derslerdb $dersler)
-    {
-        $this->dersler[] = $dersler;
 
-        return $this;
-    }
-
-    /**
-     * Remove dersler
-     *
-     * @param \AppBundle\Entity\derslerdb $dersler
-     */
-    public function removeDersler(\AppBundle\Entity\derslerdb $dersler)
-    {
-        $this->dersler->removeElement($dersler);
-    }
-
-    /**
-     * Get dersler
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getDersler()
-    {
-        return $this->dersler;
-    }
 
     /**
      * Add dersler2017Bahar

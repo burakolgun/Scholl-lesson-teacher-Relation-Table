@@ -409,32 +409,7 @@ class ogretim_gorevlisidb
      *
      * @return ogretim_gorevlisidb
      */
-    public function addDersler(\AppBundle\Entity\derslerdb $dersler)
-    {
-        $this->dersler[] = $dersler;
 
-        return $this;
-    }
-
-    /**
-     * Remove dersler
-     *
-     * @param \AppBundle\Entity\derslerdb $dersler
-     */
-    public function removeDersler(\AppBundle\Entity\derslerdb $dersler)
-    {
-        $this->dersler->removeElement($dersler);
-    }
-
-    /**
-     * Get dersler
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getDersler()
-    {
-        return $this->dersler;
-    }
 
     /**
      * Add dersler2017Bahar
@@ -706,5 +681,345 @@ class ogretim_gorevlisidb
     public function getDersler2020Guz()
     {
         return $this->dersler_2020_guz;
+    }
+
+    /**
+     * Add dersler2021Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2021Bahar
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2021Bahar(\AppBundle\Entity\derslerdb $dersler2021Bahar)
+    {
+        $this->dersler_2021_bahar[] = $dersler2021Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2021Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2021Bahar
+     */
+    public function removeDersler2021Bahar(\AppBundle\Entity\derslerdb $dersler2021Bahar)
+    {
+        $this->dersler_2021_bahar->removeElement($dersler2021Bahar);
+    }
+
+    /**
+     * Get dersler2021Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2021Bahar()
+    {
+        return $this->dersler_2021_bahar;
+    }
+
+    /**
+     * Add dersler2021Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2021Guz
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2021Guz(\AppBundle\Entity\derslerdb $dersler2021Guz)
+    {
+        $this->dersler_2021_guz[] = $dersler2021Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2021Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2021Guz
+     */
+    public function removeDersler2021Guz(\AppBundle\Entity\derslerdb $dersler2021Guz)
+    {
+        $this->dersler_2021_guz->removeElement($dersler2021Guz);
+    }
+
+    /**
+     * Get dersler2021Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2021Guz()
+    {
+        return $this->dersler_2021_guz;
+    }
+
+    /**
+     * Add dersler2022Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2022Bahar
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2022Bahar(\AppBundle\Entity\derslerdb $dersler2022Bahar)
+    {
+        $this->dersler_2022_bahar[] = $dersler2022Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2022Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2022Bahar
+     */
+    public function removeDersler2022Bahar(\AppBundle\Entity\derslerdb $dersler2022Bahar)
+    {
+        $this->dersler_2022_bahar->removeElement($dersler2022Bahar);
+    }
+
+    /**
+     * Get dersler2022Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2022Bahar()
+    {
+        return $this->dersler_2022_bahar;
+    }
+
+    /**
+     * Add dersler2022Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2022Guz
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2022Guz(\AppBundle\Entity\derslerdb $dersler2022Guz)
+    {
+        $this->dersler_2022_guz[] = $dersler2022Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2022Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2022Guz
+     */
+    public function removeDersler2022Guz(\AppBundle\Entity\derslerdb $dersler2022Guz)
+    {
+        $this->dersler_2022_guz->removeElement($dersler2022Guz);
+    }
+
+    /**
+     * Get dersler2022Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2022Guz()
+    {
+        return $this->dersler_2022_guz;
+    }
+
+    /**
+     * Add dersler2023Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2023Bahar
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2023Bahar(\AppBundle\Entity\derslerdb $dersler2023Bahar)
+    {
+        $this->dersler_2023_bahar[] = $dersler2023Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2023Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2023Bahar
+     */
+    public function removeDersler2023Bahar(\AppBundle\Entity\derslerdb $dersler2023Bahar)
+    {
+        $this->dersler_2023_bahar->removeElement($dersler2023Bahar);
+    }
+
+    /**
+     * Get dersler2023Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2023Bahar()
+    {
+        return $this->dersler_2023_bahar;
+    }
+
+    /**
+     * Add dersler2023Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2023Guz
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2023Guz(\AppBundle\Entity\derslerdb $dersler2023Guz)
+    {
+        $this->dersler_2023_guz[] = $dersler2023Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2023Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2023Guz
+     */
+    public function removeDersler2023Guz(\AppBundle\Entity\derslerdb $dersler2023Guz)
+    {
+        $this->dersler_2023_guz->removeElement($dersler2023Guz);
+    }
+
+    /**
+     * Get dersler2023Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2023Guz()
+    {
+        return $this->dersler_2023_guz;
+    }
+
+    /**
+     * Add dersler2024Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2024Bahar
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2024Bahar(\AppBundle\Entity\derslerdb $dersler2024Bahar)
+    {
+        $this->dersler_2024_bahar[] = $dersler2024Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2024Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2024Bahar
+     */
+    public function removeDersler2024Bahar(\AppBundle\Entity\derslerdb $dersler2024Bahar)
+    {
+        $this->dersler_2024_bahar->removeElement($dersler2024Bahar);
+    }
+
+    /**
+     * Get dersler2024Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2024Bahar()
+    {
+        return $this->dersler_2024_bahar;
+    }
+
+    /**
+     * Add dersler2024Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2024Guz
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2024Guz(\AppBundle\Entity\derslerdb $dersler2024Guz)
+    {
+        $this->dersler_2024_guz[] = $dersler2024Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2024Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2024Guz
+     */
+    public function removeDersler2024Guz(\AppBundle\Entity\derslerdb $dersler2024Guz)
+    {
+        $this->dersler_2024_guz->removeElement($dersler2024Guz);
+    }
+
+    /**
+     * Get dersler2024Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2024Guz()
+    {
+        return $this->dersler_2024_guz;
+    }
+
+    /**
+     * Add dersler2025Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2025Bahar
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2025Bahar(\AppBundle\Entity\derslerdb $dersler2025Bahar)
+    {
+        $this->dersler_2025_bahar[] = $dersler2025Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2025Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2025Bahar
+     */
+    public function removeDersler2025Bahar(\AppBundle\Entity\derslerdb $dersler2025Bahar)
+    {
+        $this->dersler_2025_bahar->removeElement($dersler2025Bahar);
+    }
+
+    /**
+     * Get dersler2025Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2025Bahar()
+    {
+        return $this->dersler_2025_bahar;
+    }
+
+    /**
+     * Add dersler2025Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2025Guz
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2025Guz(\AppBundle\Entity\derslerdb $dersler2025Guz)
+    {
+        $this->dersler_2025_guz[] = $dersler2025Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2025Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2025Guz
+     */
+    public function removeDersler2025Guz(\AppBundle\Entity\derslerdb $dersler2025Guz)
+    {
+        $this->dersler_2025_guz->removeElement($dersler2025Guz);
+    }
+
+    /**
+     * Get dersler2025Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2025Guz()
+    {
+        return $this->dersler_2025_guz;
     }
 }

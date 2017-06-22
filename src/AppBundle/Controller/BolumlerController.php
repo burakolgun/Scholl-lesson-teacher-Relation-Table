@@ -355,7 +355,7 @@ class BolumlerController extends Controller
 
         $donem = $ders->getDersDonem();
 
-        $hoca ->addDersler($ders);
+        $hoca ->addDersler2017Guz($ders); // buradan donemlere gore ders ekliyoruz :D
 
         $em ->persist($ders);
         $em ->flush();

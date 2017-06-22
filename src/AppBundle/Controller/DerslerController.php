@@ -167,6 +167,7 @@ class DerslerController extends Controller
         $ders = $em
             ->getRepository('AppBundle:derslerdb')
             ->find($id);
+
         return $this -> render(':default/Lectures_Pages:ders_detay.html.twig',
             array(
                 'ders' => $ders

@@ -15,6 +15,7 @@
 
 
 
+
     <table class="table table-striped">
         <thead>
         <tr>
@@ -83,7 +84,7 @@
              <td>
 
                  {% set controller = true %}
-                 {% for ogretmen in ders.ogretmenler %}
+                 {% for ogretmen in ders.Ogretmenler2017Guz %}
                     {% set controller = false %}
                      {{ ogretmen.gorevliAd }} {{ ogretmen.gorevliSoyad }}
                      {% set toplam_teori = toplam_teori + ders.teoripuan %}
