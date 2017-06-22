@@ -82,24 +82,38 @@
              </td>
              <td>{{ ders.pratikpuan }}</td>
              <td>
-
                  {% set controller = true %}
-                 {% for ogretmen in ders.Ogretmenler2017Guz %}
+
+                 {% if  semester_id == 'ders.Ogretmenler2017Guz' %}
+                 {% for ogretmen in ders.Ogretmenler2017Guz  %}
                     {% set controller = false %}
                      {{ ogretmen.gorevliAd }} {{ ogretmen.gorevliSoyad }}
                      {% set toplam_teori = toplam_teori + ders.teoripuan %}
                      {% set toplam_uygulama = toplam_uygulama +  ders.pratikpuan %}
                         <td colspan="2">
-                     <a id="sil"   class="btn btn-danger col-xs-12 col-sm-12 col-md-12" href="/bolumler/detay/dersler/gorevli/{{ ogretmen.id }}/{{ ders.id }}/{{ bolum.id }}">Sil</a>
+                     <a  class="sil btn btn-danger col-xs-12 col-sm-12 col-md-12" href="{{ path('dersten_hoca_sil', {'hoca_id': ogretmen.id , 'ders_id': ders.id ,'bolum_id': bolum.id , 'semester_id': semester_id}) }}">Sil</a>
                  </td>
 
                  {% endfor %}
+                 {% elseif semester_id == 'ders.Ogretmenler2018Bahar' %}
+                 {% for ogretmen in ders.Ogretmenler2018Bahar  %}
+                     {% set controller = false %}
+                     {{ ogretmen.gorevliAd }} {{ ogretmen.gorevliSoyad }}
+                     {% set toplam_teori = toplam_teori + ders.teoripuan %}
+                     {% set toplam_uygulama = toplam_uygulama +  ders.pratikpuan %}
+                     <td colspan="2">
+                         <a   class="sil btn btn-danger col-xs-12 col-sm-12 col-md-12" href="{{ path('dersten_hoca_sil', {'hoca_id': ogretmen.id , 'ders_id': ders.id ,'bolum_id': bolum.id , 'semester_id': semester_id}) }}">Sil</a>
+                     </td>
+
+                 {% endfor %}
+
+             {% endif %}
                    {% if controller == true %}
                     Atanmadı
                      {% endif %}
                  <td>
                  {% if controller == true %}
-                     <a class="btn btn-primary col-xs-12 col-sm-12 col-md-12"  href="/bolumler/detay/dersler/{{ bolum.id }}/{{ ders.id }}">Görevli Ekle</a>
+                     <a class="btn btn-primary col-xs-12 col-sm-12 col-md-12"  href=" {{ path('bolum_dersler_hocalar', {'bolum_id': bolum.id, 'ders_id': ders.id ,'semester_id': semester_id}) }}">Görevli Ekle</a>
 </td>
                  {% endif %}
 
@@ -108,6 +122,8 @@
          {% endif %}
 
                 {% endfor %}
+
+
 
 
 

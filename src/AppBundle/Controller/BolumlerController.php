@@ -138,9 +138,9 @@ class BolumlerController extends Controller
     }
 
         /**
-         * @Route("/bolum_detay/{id}/{donem_id}" , name="bolum_detay")
+         * @Route("/bolum_detay/{id}/{donem_id}/{semester_id}" , name="bolum_detay")
          */
-        public function bolumDetayAction($id,$donem_id, Request $request)
+        public function bolumDetayAction($id,$donem_id,$semester_id, Request $request)
         {
 
             try {
@@ -148,6 +148,7 @@ class BolumlerController extends Controller
                     ->getRepository('AppBundle:bolumdb')
                     ->find($id);
                 $dersler = $bolum->getDersler();
+
 
                 //Bolume Yeni Ders Eklemek Icin
 
@@ -157,7 +158,8 @@ class BolumlerController extends Controller
                     array(
                         'bolum' => $bolum,
                         'dersler' => $dersler,
-                        'donem_id' => $donem_id
+                        'donem_id' => $donem_id,
+                        'semester_id' => $semester_id
                     )
                 );
             }catch (ConnectionException $exception)
@@ -302,9 +304,9 @@ class BolumlerController extends Controller
                 }
             }
     /**
-     * @Route("/bolumler/detay/dersler/{bolum_id}/{ders_id}" , name="bolum_ders_ekle")
+     * @Route("/bolumler/detay/dersler/{bolum_id}/{ders_id}/{semester_id}" , name="bolum_dersler_hocalar")
      */
-    public function departmentAddLessonAction($bolum_id , $ders_id ,  Request $request)
+    public function departmentAddLessonAction($bolum_id , $ders_id , $semester_id ,  Request $request)
     {
         try{
         $em = $this -> getDoctrine()->getRepository('AppBundle:ogretim_gorevlisidb');
@@ -320,7 +322,8 @@ class BolumlerController extends Controller
         return $this->render('default/Department_Pages/bolum_ders_hocaekle.html.twig',array(
             'hocalar' => $hocalar,
             'bolum_id' => $bolum_id,
-            'ders_id' => $ders_id
+            'ders_id' => $ders_id,
+            'semester_id' => $semester_id
         ));
     }catch (ConnectionException $exception)
         {
@@ -338,13 +341,13 @@ class BolumlerController extends Controller
         }}
 
     /**
-     * @Route("/bolumler/detay/dersler/{bolum_id}/{ders_id}/{hoca_id}" , name="hocaya_ders_ekle_on_function")
+     * @Route("/bolumler/detay/dersler/{bolum_id}/{ders_id}/{hoca_id}/{semester_id}" , name="hocaya_ders_ekle_on_function")
      */
 
 
 
 
-    public function teacherLessonAddAction($bolum_id , $ders_id , $hoca_id)
+    public function teacherLessonAddAction($bolum_id , $ders_id , $hoca_id ,$semester_id)
     {
         try{
         $em = $this
@@ -354,13 +357,99 @@ class BolumlerController extends Controller
         $ders = $em ->find('AppBundle:derslerdb' , $ders_id);
 
         $donem = $ders->getDersDonem();
+        if($semester_id == 'ders.Ogretmenler2017Guz') {
+            $hoca->addDersler2017Guz($ders); // buradan donemlere gore ders ekliyoruz :D
 
-        $hoca ->addDersler2017Guz($ders); // buradan donemlere gore ders ekliyoruz :D
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2017Bahar'){
+            $hoca->addDersler2017Bahar($ders); // buradan donemlere gore ders ekliyoruz :D
 
-        $em ->persist($ders);
-        $em ->flush();
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2018Guz'){
+            $hoca->addDersler2018Guz($ders); // buradan donemlere gore ders ekliyoruz :D
 
-        return $this->redirect('http://localhost:8000/bolum_detay/'.$bolum_id.'/'.$donem);
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2018Bahar'){
+            $hoca->addDersler2018Bahar($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2019Guz'){
+            $hoca->addDersler2019Guz($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2019Bahar'){
+            $hoca->addDersler2019Bahar($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2020Guz'){
+            $hoca->addDersler2020Guz($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2020Bahar'){
+            $hoca->addDersler2020Bahar($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2021Guz'){
+            $hoca->addDersler2021Guz($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2021Bahar'){
+            $hoca->addDersler2021Bahar($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2022Guz'){
+            $hoca->addDersler2022Guz($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2022Bahar'){
+            $hoca->addDersler2022Bahar($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2023Guz'){
+            $hoca->addDersler2023Guz($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2023Bahar'){
+            $hoca->addDersler2023Bahar($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2024Guz'){
+            $hoca->addDersler2024Guz($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2024Bahar'){
+            $hoca->addDersler2024Bahar($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2025Guz'){
+            $hoca->addDersler2025Guz($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }elseif ($semester_id == 'ders.Ogretmenler2025Bahar'){
+            $hoca->addDersler2025Bahar($ders); // buradan donemlere gore ders ekliyoruz :D
+
+            $em->persist($ders);
+            $em->flush();
+        }
+
+        return $this->redirect('http://localhost:8000/bolum_detay/'.$bolum_id.'/'.$donem.'/'.$semester_id);
 
     }catch (ConnectionException $exception)
         {
@@ -378,10 +467,10 @@ class BolumlerController extends Controller
         }}
 
     /**
-     * @Route("/bolumler/detay/dersler/gorevli/{hoca_id}/{ders_id}/{bolum_id}" , name="dersten_hoca_sil")
+     * @Route("/bolumler/detay/dersler/gorevli/{hoca_id}/{ders_id}/{bolum_id}/{semester_id}" , name="dersten_hoca_sil")
      */
 
-    public function teachersLessonDeleteAction($hoca_id , $ders_id , $bolum_id)
+    public function teachersLessonDeleteAction($hoca_id , $ders_id , $bolum_id , $semester_id)
     {
         try{
 
@@ -391,13 +480,99 @@ class BolumlerController extends Controller
 
         $ders = $em ->find('AppBundle:derslerdb' , $ders_id);
         $donem = $ders->getDersDonem();
-
-        $hoca ->removeDersler($ders);
+            if($semester_id == 'ders.Ogretmenler2017Guz'){
+        $hoca ->removeDersler2017Guz($ders);
 
         $em ->persist($ders);
-        $em ->flush();
+        $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2017Bahar'){
+                $hoca ->removeDersler2017Bahar($ders);
 
-        return $this->redirect('http://localhost:8000/bolum_detay/'.$bolum_id.'/'.$donem);
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2018Guz'){
+                $hoca ->removeDersler2018Guz($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2018Bahar'){
+                $hoca ->removeDersler2018Bahar($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2019Guz'){
+                $hoca ->removeDersler2019Guz($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2019Bahar'){
+                $hoca ->removeDersler2019Bahar($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2020Guz'){
+                $hoca ->removeDersler2020Guz($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2020Bahar'){
+                $hoca ->removeDersler2020Bahar($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2021Guz'){
+                $hoca ->removeDersler2021Guz($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2021Bahar'){
+                $hoca ->removeDersler2021Bahar($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2022Guz'){
+                $hoca ->removeDersler2022Guz($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2022Bahar'){
+                $hoca ->removeDersler2022Bahar($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2023Guz'){
+                $hoca ->removeDersler2023Guz($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2023Bahar'){
+                $hoca ->removeDersler2023Bahar($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2024Guz'){
+                $hoca ->removeDersler2024Guz($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2024Bahar'){
+                $hoca ->removeDersler2024Bahar($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2025Guz'){
+                $hoca ->removeDersler2025Guz($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+            elseif($semester_id == 'ders.Ogretmenler2025Bahar'){
+                $hoca ->removeDersler2025Bahar($ders);
+
+                $em ->persist($ders);
+                $em ->flush();}
+
+
+        return $this->redirect('/bolum_detay/'.$bolum_id.'/'.$donem.'/'.$semester_id);
 
 
     }catch (ConnectionException $exception)

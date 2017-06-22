@@ -22,14 +22,14 @@
             <tr>
         <td>{{ hoca.gorevliAd }}  {{ hoca.gorevliSoyad }}</td>
         <td>
-            <a class="btn btn-success btn-sm col-md-12" href="/bolumler/detay/dersler/{{ bolum_id}}/{{ ders_id }}/{{ hoca.id }}">Ekle</a>
+            <a class="btn btn-success btn-sm col-md-12" href="{{ path('hocaya_ders_ekle_on_function', {'bolum_id': bolum_id , 'ders_id': ders_id ,'hoca_id': hoca.id ,'semester_id': semester_id}) }}">Ekle</a>
         </td>
             {% set trControl = trControl +1 %}
         {% else %}
             <td>{{ hoca.gorevliAd }}  {{ hoca.gorevliSoyad }}</td>
             {% set trControl = 0 %}
             <td>
-                <a class="btn btn-success btn-sm col-md-12" href="/bolumler/detay/dersler/{{ bolum_id}}/{{ ders_id }}/{{ hoca.id }}">Ekle</a>
+                <a class="btn btn-success btn-sm col-md-12" href="{{ path('hocaya_ders_ekle_on_function', {'bolum_id': bolum_id , 'ders_id': ders_id ,'hoca_id': hoca.id ,'semester_id': semester_id}) }}">Ekle</a>
             </td>
 
             </tr>
