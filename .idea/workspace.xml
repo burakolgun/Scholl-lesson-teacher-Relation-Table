@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7ce68f47-23a0-4142-97c2-e434b87e2983" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/BolumlerController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/BolumlerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/OgretmenDersController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/OgretmenDersController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/derslerdb.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/derslerdb.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/ogretim_gorevlisidb.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/ogretim_gorevlisidb.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,53 +37,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OgretmenDersController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/OgretmenDersController.php">
+      <file leaf-file-name="ogretim_gorevlisidb.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ogretim_gorevlisidb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-              <folding>
-                <element signature="e#40#81#0#PHP" expanded="true" />
-                <element signature="e#1436#1486#1#PHP" expanded="true" />
-                <element signature="e#1755#1799#1#PHP" expanded="true" />
-                <element signature="e#8290#8340#1#PHP" expanded="true" />
-                <element signature="e#8609#8653#1#PHP" expanded="true" />
-                <element signature="e#15523#15573#1#PHP" expanded="true" />
-                <element signature="e#15842#15886#1#PHP" expanded="true" />
-                <element signature="e#16745#16795#1#PHP" expanded="true" />
-                <element signature="e#17064#17108#1#PHP" expanded="true" />
-                <element signature="e#17988#18038#1#PHP" expanded="true" />
-                <element signature="e#18307#18351#1#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="326">
+              <caret line="219" column="34" lean-forward="false" selection-start-line="219" selection-start-column="34" selection-end-line="219" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BolumlerController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BolumlerController.php">
+      <file leaf-file-name="derslerdb.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/derslerdb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#877#896#1#PHP" expanded="true" />
-                <element signature="e#978#1023#0#PHP" expanded="true" />
-                <element signature="e#1369#1419#1#PHP" expanded="true" />
-                <element signature="e#1675#1719#1#PHP" expanded="true" />
-                <element signature="e#4112#4162#1#PHP" expanded="true" />
-                <element signature="e#4418#4462#1#PHP" expanded="true" />
-                <element signature="e#5508#5558#1#PHP" expanded="true" />
-                <element signature="e#5838#5882#1#PHP" expanded="true" />
-                <element signature="e#8707#8757#1#PHP" expanded="true" />
-                <element signature="e#9037#9081#1#PHP" expanded="true" />
-                <element signature="e#9947#9997#1#PHP" expanded="true" />
-                <element signature="e#10314#10358#1#PHP" expanded="true" />
-                <element signature="e#11205#11255#1#PHP" expanded="true" />
-                <element signature="e#11511#11555#1#PHP" expanded="true" />
-                <element signature="e#12468#12518#1#PHP" expanded="true" />
-                <element signature="e#12774#12818#1#PHP" expanded="true" />
-                <element signature="e#13732#13782#1#PHP" expanded="true" />
-                <element signature="e#14038#14082#1#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="454">
+              <caret line="211" column="5" lean-forward="true" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,9 +127,7 @@
         <option value="$PROJECT_DIR$/app/Resources/views/default/Teachers_Pages/ogretmen_duzenle.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/ders_duzenle.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/DerslerController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/derslerdb.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/ogretim_gorevlisidb.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_ders_hocaekle.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolumler.html.twig" />
@@ -166,6 +135,8 @@
         <option value="$PROJECT_DIR$/app/Resources/views/default/ErrorPages/404ErrorPage.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/BolumlerController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/OgretmenDersController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/derslerdb.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/ogretim_gorevlisidb.php" />
       </list>
     </option>
   </component>
@@ -218,8 +189,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1040" />
-    <option name="height" value="744" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -239,7 +210,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -512,7 +483,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -654,28 +625,29 @@
       <workItem from="1496845739066" duration="191000" />
       <workItem from="1496953331806" duration="1493000" />
       <workItem from="1497300140954" duration="1919000" />
-      <workItem from="1497551059503" duration="2731000" />
+      <workItem from="1497551059503" duration="3483000" />
+      <workItem from="1497618946358" duration="82000" />
+      <workItem from="1498132527003" duration="1368000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112286000" />
+    <option name="totallyTimeSpent" value="114488000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1040" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35510203" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34670487" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18003273" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14939435" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -971,13 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ogretim_gorevlisidb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DerslerController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-128">
@@ -985,19 +950,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/derslerdb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1984">
           <caret line="124" column="14" lean-forward="false" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,9 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding>
-            <element signature="e#241#251#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,9 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1033,7 +982,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/OgretmenDersController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="42" column="57" lean-forward="false" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
+          <folding>
+            <element signature="e#39#80#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1041,46 +999,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#877#896#1#PHP" expanded="true" />
-            <element signature="e#978#1023#0#PHP" expanded="true" />
-            <element signature="e#1369#1419#1#PHP" expanded="true" />
-            <element signature="e#1675#1719#1#PHP" expanded="true" />
-            <element signature="e#4112#4162#1#PHP" expanded="true" />
-            <element signature="e#4418#4462#1#PHP" expanded="true" />
-            <element signature="e#5508#5558#1#PHP" expanded="true" />
-            <element signature="e#5838#5882#1#PHP" expanded="true" />
-            <element signature="e#8707#8757#1#PHP" expanded="true" />
-            <element signature="e#9037#9081#1#PHP" expanded="true" />
-            <element signature="e#9947#9997#1#PHP" expanded="true" />
-            <element signature="e#10314#10358#1#PHP" expanded="true" />
-            <element signature="e#11205#11255#1#PHP" expanded="true" />
-            <element signature="e#11511#11555#1#PHP" expanded="true" />
-            <element signature="e#12468#12518#1#PHP" expanded="true" />
-            <element signature="e#12774#12818#1#PHP" expanded="true" />
-            <element signature="e#13732#13782#1#PHP" expanded="true" />
-            <element signature="e#14038#14082#1#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/OgretmenDersController.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/derslerdb.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="e#40#81#0#PHP" expanded="true" />
-            <element signature="e#1436#1486#1#PHP" expanded="true" />
-            <element signature="e#1755#1799#1#PHP" expanded="true" />
-            <element signature="e#8290#8340#1#PHP" expanded="true" />
-            <element signature="e#8609#8653#1#PHP" expanded="true" />
-            <element signature="e#15523#15573#1#PHP" expanded="true" />
-            <element signature="e#15842#15886#1#PHP" expanded="true" />
-            <element signature="e#16745#16795#1#PHP" expanded="true" />
-            <element signature="e#17064#17108#1#PHP" expanded="true" />
-            <element signature="e#17988#18038#1#PHP" expanded="true" />
-            <element signature="e#18307#18351#1#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="454">
+          <caret line="211" column="5" lean-forward="true" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/ogretim_gorevlisidb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="219" column="34" lean-forward="false" selection-start-line="219" selection-start-column="34" selection-end-line="219" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

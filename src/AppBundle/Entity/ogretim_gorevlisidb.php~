@@ -17,14 +17,216 @@ class ogretim_gorevlisidb
 
     /**
      * Many Users have Many Groups.
-     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler")
-     * @ORM\JoinTable(name="ogretmenler_dersler")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2017_bahar")
+     * @ORM\JoinTable(name="ogretmenler_2017_bahar_dersler")
      */
-    private $dersler;
+    private $dersler_2017_bahar;
 
     public function __construct() {
-        $this->dersler = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->dersler_2017_bahar = new \Doctrine\Common\Collections\ArrayCollection();
     }
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2017_guz")
+     * @ORM\JoinTable(name="ogretmenler_2017_guz_dersler")
+     */
+    private $dersler_2017_guz;
+
+    public function __constructer() {
+        $this->dersler_2017_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2018_bahar")
+     * @ORM\JoinTable(name="ogretmenler_2018_bahar_dersler")
+     */
+    private $dersler_2018_bahar;
+
+    public function __construct1() {
+        $this->dersler_2018_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2018_guz")
+     * @ORM\JoinTable(name="ogretmenler_2018_guz_dersler")
+     */
+    private $dersler_2018_guz;
+
+    public function __constructer1() {
+        $this->dersler_2018_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2019_bahar")
+     * @ORM\JoinTable(name="ogretmenler_2019_bahar_dersler")
+     */
+    private $dersler_2019_bahar;
+
+    public function __construct2() {
+        $this->dersler_2019_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2019_guz")
+     * @ORM\JoinTable(name="ogretmenler_2019_guz_dersler")
+     */
+    private $dersler_2019_guz;
+
+    public function __constructer2() {
+        $this->dersler_2019_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2020_bahar")
+     * @ORM\JoinTable(name="ogretmenler_2020_bahar_dersler")
+     */
+    private $dersler_2020_bahar;
+
+    public function __construct3() {
+        $this->dersler_2020_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2020_guz")
+     * @ORM\JoinTable(name="ogretmenler_2020_guz_dersler")
+     */
+    private $dersler_2020_guz;
+
+    public function __constructer3() {
+        $this->dersler_2020_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+ * Many Users have Many Groups.
+ * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2021_bahar")
+ * @ORM\JoinTable(name="ogretmenler_2021_bahar_dersler")
+ */
+    private $dersler_2021_bahar;
+
+    public function __construct4() {
+        $this->dersler_2021_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2021_guz")
+     * @ORM\JoinTable(name="ogretmenler_2021_guz_dersler")
+     */
+    private $dersler_2021_guz;
+
+    public function __constructer4() {
+        $this->dersler_2021_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2022_bahar")
+     * @ORM\JoinTable(name="ogretmenler_2022_bahar_dersler")
+     */
+    private $dersler_2022_bahar;
+
+    public function __construct5() {
+        $this->dersler_2022_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2022_guz")
+     * @ORM\JoinTable(name="ogretmenler_2022_guz_dersler")
+     */
+    private $dersler_2022_guz;
+
+    public function __constructer5() {
+        $this->dersler_2022_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2023_bahar")
+     * @ORM\JoinTable(name="ogretmenler_2023_bahar_dersler")
+     */
+    private $dersler_2023_bahar;
+
+    public function __construct6() {
+        $this->dersler_2023_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2023_guz")
+     * @ORM\JoinTable(name="ogretmenler_2023_guz_dersler")
+     */
+    private $dersler_2023_guz;
+
+    public function __constructer6() {
+        $this->dersler_2023_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2024_bahar")
+     * @ORM\JoinTable(name="ogretmenler_2024_bahar_dersler")
+     */
+    private $dersler_2024_bahar;
+
+    public function __construct7() {
+        $this->dersler_2024_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2024_guz")
+     * @ORM\JoinTable(name="ogretmenler_2024_guz_dersler")
+     */
+    private $dersler_2024_guz;
+
+    public function __constructer7() {
+        $this->dersler_2024_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2025_bahar")
+     * @ORM\JoinTable(name="ogretmenler_2025_bahar_dersler")
+     */
+    private $dersler_2025_bahar;
+
+    public function __construct8() {
+        $this->dersler_2025_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many Users have Many Groups.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\derslerdb", inversedBy="ogretmenler_2025_guz")
+     * @ORM\JoinTable(name="ogretmenler_2025_guz_dersler")
+     */
+    private $dersler_2025_guz;
+
+    public function __constructer8() {
+        $this->dersler_2025_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+
+
+
+
+
     /**
      * @var int
      *
@@ -232,5 +434,277 @@ class ogretim_gorevlisidb
     public function getDersler()
     {
         return $this->dersler;
+    }
+
+    /**
+     * Add dersler2017Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2017Bahar
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2017Bahar(\AppBundle\Entity\derslerdb $dersler2017Bahar)
+    {
+        $this->dersler_2017_bahar[] = $dersler2017Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2017Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2017Bahar
+     */
+    public function removeDersler2017Bahar(\AppBundle\Entity\derslerdb $dersler2017Bahar)
+    {
+        $this->dersler_2017_bahar->removeElement($dersler2017Bahar);
+    }
+
+    /**
+     * Get dersler2017Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2017Bahar()
+    {
+        return $this->dersler_2017_bahar;
+    }
+
+    /**
+     * Add dersler2017Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2017Guz
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2017Guz(\AppBundle\Entity\derslerdb $dersler2017Guz)
+    {
+        $this->dersler_2017_guz[] = $dersler2017Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2017Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2017Guz
+     */
+    public function removeDersler2017Guz(\AppBundle\Entity\derslerdb $dersler2017Guz)
+    {
+        $this->dersler_2017_guz->removeElement($dersler2017Guz);
+    }
+
+    /**
+     * Get dersler2017Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2017Guz()
+    {
+        return $this->dersler_2017_guz;
+    }
+
+    /**
+     * Add dersler2018Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2018Bahar
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2018Bahar(\AppBundle\Entity\derslerdb $dersler2018Bahar)
+    {
+        $this->dersler_2018_bahar[] = $dersler2018Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2018Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2018Bahar
+     */
+    public function removeDersler2018Bahar(\AppBundle\Entity\derslerdb $dersler2018Bahar)
+    {
+        $this->dersler_2018_bahar->removeElement($dersler2018Bahar);
+    }
+
+    /**
+     * Get dersler2018Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2018Bahar()
+    {
+        return $this->dersler_2018_bahar;
+    }
+
+    /**
+     * Add dersler2018Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2018Guz
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2018Guz(\AppBundle\Entity\derslerdb $dersler2018Guz)
+    {
+        $this->dersler_2018_guz[] = $dersler2018Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2018Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2018Guz
+     */
+    public function removeDersler2018Guz(\AppBundle\Entity\derslerdb $dersler2018Guz)
+    {
+        $this->dersler_2018_guz->removeElement($dersler2018Guz);
+    }
+
+    /**
+     * Get dersler2018Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2018Guz()
+    {
+        return $this->dersler_2018_guz;
+    }
+
+    /**
+     * Add dersler2019Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2019Bahar
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2019Bahar(\AppBundle\Entity\derslerdb $dersler2019Bahar)
+    {
+        $this->dersler_2019_bahar[] = $dersler2019Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2019Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2019Bahar
+     */
+    public function removeDersler2019Bahar(\AppBundle\Entity\derslerdb $dersler2019Bahar)
+    {
+        $this->dersler_2019_bahar->removeElement($dersler2019Bahar);
+    }
+
+    /**
+     * Get dersler2019Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2019Bahar()
+    {
+        return $this->dersler_2019_bahar;
+    }
+
+    /**
+     * Add dersler2019Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2019Guz
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2019Guz(\AppBundle\Entity\derslerdb $dersler2019Guz)
+    {
+        $this->dersler_2019_guz[] = $dersler2019Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2019Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2019Guz
+     */
+    public function removeDersler2019Guz(\AppBundle\Entity\derslerdb $dersler2019Guz)
+    {
+        $this->dersler_2019_guz->removeElement($dersler2019Guz);
+    }
+
+    /**
+     * Get dersler2019Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2019Guz()
+    {
+        return $this->dersler_2019_guz;
+    }
+
+    /**
+     * Add dersler2020Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2020Bahar
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2020Bahar(\AppBundle\Entity\derslerdb $dersler2020Bahar)
+    {
+        $this->dersler_2020_bahar[] = $dersler2020Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2020Bahar
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2020Bahar
+     */
+    public function removeDersler2020Bahar(\AppBundle\Entity\derslerdb $dersler2020Bahar)
+    {
+        $this->dersler_2020_bahar->removeElement($dersler2020Bahar);
+    }
+
+    /**
+     * Get dersler2020Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2020Bahar()
+    {
+        return $this->dersler_2020_bahar;
+    }
+
+    /**
+     * Add dersler2020Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2020Guz
+     *
+     * @return ogretim_gorevlisidb
+     */
+    public function addDersler2020Guz(\AppBundle\Entity\derslerdb $dersler2020Guz)
+    {
+        $this->dersler_2020_guz[] = $dersler2020Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove dersler2020Guz
+     *
+     * @param \AppBundle\Entity\derslerdb $dersler2020Guz
+     */
+    public function removeDersler2020Guz(\AppBundle\Entity\derslerdb $dersler2020Guz)
+    {
+        $this->dersler_2020_guz->removeElement($dersler2020Guz);
+    }
+
+    /**
+     * Get dersler2020Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getDersler2020Guz()
+    {
+        return $this->dersler_2020_guz;
     }
 }

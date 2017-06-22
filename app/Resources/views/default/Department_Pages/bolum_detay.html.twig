@@ -128,25 +128,24 @@
     <hr/>
 
     <!-- Gorevli silinmeden once emin misiniz sorusu icin  -->
-    <script>
-        document.getElementById("sil").addEventListener("click", deleteAction); // id verilen butonun click olma durumu icin
+     <script>
+        var cls = document.getElementsByClassName("sil"); // id verilen butonun click olma durumu icin
 
-        function deleteAction(evt) { // click oldugunda cagirilacak fonksiyon
+        var myDeleteFunction = function(evt) { // click oldugunda cagirilacak fonksiyon
 
-            if(confirm("Emin misiniz?"))  // yes no cikarmak icin
+            if(confirm("Silmek istediğinize emin misiniz?"))  // yes no cikarmak icin
             {
                 alert('Silindi!');  // yes ise
             }
             else
             {
                 evt.preventDefault();  // no ise vazgecmek icin
+            }  
+        };
+        for (var i = 0; i < cls.length; i++){
+                cls[i].addEventListener('click', myDeleteFunction, false);
             }
-
-
-        }
-
     </script>
-
 
 
 

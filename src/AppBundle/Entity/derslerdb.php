@@ -24,13 +24,193 @@ class derslerdb
     }
     /**
      * Many ders have Many ogretmen.
-     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler")
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2017_bahar")
      */
-    private $ogretmenler;
+    private $ogretmenler_2017_bahar;
 
     public function _construct() {
-        $this->ogretmenler = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->ogretmenler_2017_bahar = new \Doctrine\Common\Collections\ArrayCollection();
     }
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2017_guz")
+     */
+    private $ogretmenler_2017_guz;
+
+    public function _constructer() {
+        $this->ogretmenler_2017_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2018_bahar")
+     */
+    private $ogretmenler_2018_bahar;
+
+    public function _construct1() {
+        $this->ogretmenler_2018_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2018_guz")
+     */
+    private $ogretmenler_2018_guz;
+
+    public function _constructer2() {
+        $this->ogretmenler_2018_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2019_bahar")
+     */
+    private $ogretmenler_2019_bahar;
+
+    public function _construct2() {
+        $this->ogretmenler_2019_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2019_guz")
+     */
+    private $ogretmenler_2019_guz;
+
+    public function _constructer3() {
+        $this->ogretmenler_2019_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2020_bahar")
+     */
+    private $ogretmenler_2020_bahar;
+
+    public function _construct3() {
+        $this->ogretmenler_2020_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2020_guz")
+     */
+    private $ogretmenler_2020_guz;
+
+    public function _constructer4() {
+        $this->ogretmenler_2020_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2021_bahar")
+     */
+    private $ogretmenler_2021_bahar;
+
+    public function _construct4() {
+        $this->ogretmenler_2021_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2021_guz")
+     */
+    private $ogretmenler_2021_guz;
+
+    public function _constructer5() {
+        $this->ogretmenler_2021_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2022_bahar")
+     */
+    private $ogretmenler_2022_bahar;
+
+    public function _construct6() {
+        $this->ogretmenler_2022_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2022_guz")
+     */
+    private $ogretmenler_2022_guz;
+
+    public function _constructer6() {
+        $this->ogretmenler_2022_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2023_bahar")
+     */
+    private $ogretmenler_2023_bahar;
+
+    public function _construct7() {
+        $this->ogretmenler_2023_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2023_guz")
+     */
+    private $ogretmenler_2023_guz;
+
+    public function _constructer7() {
+        $this->ogretmenler_2023_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2024_bahar")
+     */
+    private $ogretmenler_2024_bahar;
+
+    public function _construct8() {
+        $this->ogretmenler_2024_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2024_guz")
+     */
+    private $ogretmenler_2024_guz;
+
+    public function _constructer8() {
+        $this->ogretmenler_2024_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2025_bahar")
+     */
+    private $ogretmenler_2025_bahar;
+
+    public function _construct9() {
+        $this->ogretmenler_2025_bahar = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+
+    /**
+     * Many ders have Many ogretmen.
+     * @ORM\ManyToMany(targetEntity="AppBundle\Entity\ogretim_gorevlisidb", mappedBy="dersler_2025_guz")
+     */
+    private $ogretmenler_2025_guz;
+
+    public function _constructer9() {
+        $this->ogretmenler_2025_guz = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
 
 
 
@@ -402,5 +582,617 @@ class derslerdb
     public function getOgretmenler()
     {
         return $this->ogretmenler;
+    }
+
+    /**
+     * Add ogretmenler2017Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Bahar
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2017Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Bahar)
+    {
+        $this->ogretmenler_2017_bahar[] = $ogretmenler2017Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2017Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Bahar
+     */
+    public function removeOgretmenler2017Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Bahar)
+    {
+        $this->ogretmenler_2017_bahar->removeElement($ogretmenler2017Bahar);
+    }
+
+    /**
+     * Get ogretmenler2017Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2017Bahar()
+    {
+        return $this->ogretmenler_2017_bahar;
+    }
+
+    /**
+     * Add ogretmenler2017Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Guz
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2017Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Guz)
+    {
+        $this->ogretmenler_2017_guz[] = $ogretmenler2017Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2017Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Guz
+     */
+    public function removeOgretmenler2017Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2017Guz)
+    {
+        $this->ogretmenler_2017_guz->removeElement($ogretmenler2017Guz);
+    }
+
+    /**
+     * Get ogretmenler2017Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2017Guz()
+    {
+        return $this->ogretmenler_2017_guz;
+    }
+
+    /**
+     * Add ogretmenler2018Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Bahar
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2018Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Bahar)
+    {
+        $this->ogretmenler_2018_bahar[] = $ogretmenler2018Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2018Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Bahar
+     */
+    public function removeOgretmenler2018Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Bahar)
+    {
+        $this->ogretmenler_2018_bahar->removeElement($ogretmenler2018Bahar);
+    }
+
+    /**
+     * Get ogretmenler2018Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2018Bahar()
+    {
+        return $this->ogretmenler_2018_bahar;
+    }
+
+    /**
+     * Add ogretmenler2018Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Guz
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2018Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Guz)
+    {
+        $this->ogretmenler_2018_guz[] = $ogretmenler2018Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2018Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Guz
+     */
+    public function removeOgretmenler2018Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2018Guz)
+    {
+        $this->ogretmenler_2018_guz->removeElement($ogretmenler2018Guz);
+    }
+
+    /**
+     * Get ogretmenler2018Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2018Guz()
+    {
+        return $this->ogretmenler_2018_guz;
+    }
+
+    /**
+     * Add ogretmenler2019Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Bahar
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2019Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Bahar)
+    {
+        $this->ogretmenler_2019_bahar[] = $ogretmenler2019Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2019Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Bahar
+     */
+    public function removeOgretmenler2019Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Bahar)
+    {
+        $this->ogretmenler_2019_bahar->removeElement($ogretmenler2019Bahar);
+    }
+
+    /**
+     * Get ogretmenler2019Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2019Bahar()
+    {
+        return $this->ogretmenler_2019_bahar;
+    }
+
+    /**
+     * Add ogretmenler2019Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Guz
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2019Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Guz)
+    {
+        $this->ogretmenler_2019_guz[] = $ogretmenler2019Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2019Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Guz
+     */
+    public function removeOgretmenler2019Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2019Guz)
+    {
+        $this->ogretmenler_2019_guz->removeElement($ogretmenler2019Guz);
+    }
+
+    /**
+     * Get ogretmenler2019Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2019Guz()
+    {
+        return $this->ogretmenler_2019_guz;
+    }
+
+    /**
+     * Add ogretmenler2020Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Bahar
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2020Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Bahar)
+    {
+        $this->ogretmenler_2020_bahar[] = $ogretmenler2020Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2020Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Bahar
+     */
+    public function removeOgretmenler2020Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Bahar)
+    {
+        $this->ogretmenler_2020_bahar->removeElement($ogretmenler2020Bahar);
+    }
+
+    /**
+     * Get ogretmenler2020Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2020Bahar()
+    {
+        return $this->ogretmenler_2020_bahar;
+    }
+
+    /**
+     * Add ogretmenler2020Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Guz
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2020Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Guz)
+    {
+        $this->ogretmenler_2020_guz[] = $ogretmenler2020Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2020Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Guz
+     */
+    public function removeOgretmenler2020Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2020Guz)
+    {
+        $this->ogretmenler_2020_guz->removeElement($ogretmenler2020Guz);
+    }
+
+    /**
+     * Get ogretmenler2020Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2020Guz()
+    {
+        return $this->ogretmenler_2020_guz;
+    }
+
+    /**
+     * Add ogretmenler2021Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Bahar
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2021Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Bahar)
+    {
+        $this->ogretmenler_2021_bahar[] = $ogretmenler2021Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2021Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Bahar
+     */
+    public function removeOgretmenler2021Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Bahar)
+    {
+        $this->ogretmenler_2021_bahar->removeElement($ogretmenler2021Bahar);
+    }
+
+    /**
+     * Get ogretmenler2021Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2021Bahar()
+    {
+        return $this->ogretmenler_2021_bahar;
+    }
+
+    /**
+     * Add ogretmenler2021Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Guz
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2021Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Guz)
+    {
+        $this->ogretmenler_2021_guz[] = $ogretmenler2021Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2021Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Guz
+     */
+    public function removeOgretmenler2021Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2021Guz)
+    {
+        $this->ogretmenler_2021_guz->removeElement($ogretmenler2021Guz);
+    }
+
+    /**
+     * Get ogretmenler2021Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2021Guz()
+    {
+        return $this->ogretmenler_2021_guz;
+    }
+
+    /**
+     * Add ogretmenler2022Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Bahar
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2022Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Bahar)
+    {
+        $this->ogretmenler_2022_bahar[] = $ogretmenler2022Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2022Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Bahar
+     */
+    public function removeOgretmenler2022Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Bahar)
+    {
+        $this->ogretmenler_2022_bahar->removeElement($ogretmenler2022Bahar);
+    }
+
+    /**
+     * Get ogretmenler2022Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2022Bahar()
+    {
+        return $this->ogretmenler_2022_bahar;
+    }
+
+    /**
+     * Add ogretmenler2022Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Guz
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2022Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Guz)
+    {
+        $this->ogretmenler_2022_guz[] = $ogretmenler2022Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2022Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Guz
+     */
+    public function removeOgretmenler2022Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2022Guz)
+    {
+        $this->ogretmenler_2022_guz->removeElement($ogretmenler2022Guz);
+    }
+
+    /**
+     * Get ogretmenler2022Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2022Guz()
+    {
+        return $this->ogretmenler_2022_guz;
+    }
+
+    /**
+     * Add ogretmenler2023Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Bahar
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2023Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Bahar)
+    {
+        $this->ogretmenler_2023_bahar[] = $ogretmenler2023Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2023Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Bahar
+     */
+    public function removeOgretmenler2023Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Bahar)
+    {
+        $this->ogretmenler_2023_bahar->removeElement($ogretmenler2023Bahar);
+    }
+
+    /**
+     * Get ogretmenler2023Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2023Bahar()
+    {
+        return $this->ogretmenler_2023_bahar;
+    }
+
+    /**
+     * Add ogretmenler2023Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Guz
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2023Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Guz)
+    {
+        $this->ogretmenler_2023_guz[] = $ogretmenler2023Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2023Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Guz
+     */
+    public function removeOgretmenler2023Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2023Guz)
+    {
+        $this->ogretmenler_2023_guz->removeElement($ogretmenler2023Guz);
+    }
+
+    /**
+     * Get ogretmenler2023Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2023Guz()
+    {
+        return $this->ogretmenler_2023_guz;
+    }
+
+    /**
+     * Add ogretmenler2024Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Bahar
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2024Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Bahar)
+    {
+        $this->ogretmenler_2024_bahar[] = $ogretmenler2024Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2024Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Bahar
+     */
+    public function removeOgretmenler2024Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Bahar)
+    {
+        $this->ogretmenler_2024_bahar->removeElement($ogretmenler2024Bahar);
+    }
+
+    /**
+     * Get ogretmenler2024Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2024Bahar()
+    {
+        return $this->ogretmenler_2024_bahar;
+    }
+
+    /**
+     * Add ogretmenler2024Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Guz
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2024Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Guz)
+    {
+        $this->ogretmenler_2024_guz[] = $ogretmenler2024Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2024Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Guz
+     */
+    public function removeOgretmenler2024Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2024Guz)
+    {
+        $this->ogretmenler_2024_guz->removeElement($ogretmenler2024Guz);
+    }
+
+    /**
+     * Get ogretmenler2024Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2024Guz()
+    {
+        return $this->ogretmenler_2024_guz;
+    }
+
+    /**
+     * Add ogretmenler2025Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Bahar
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2025Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Bahar)
+    {
+        $this->ogretmenler_2025_bahar[] = $ogretmenler2025Bahar;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2025Bahar
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Bahar
+     */
+    public function removeOgretmenler2025Bahar(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Bahar)
+    {
+        $this->ogretmenler_2025_bahar->removeElement($ogretmenler2025Bahar);
+    }
+
+    /**
+     * Get ogretmenler2025Bahar
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2025Bahar()
+    {
+        return $this->ogretmenler_2025_bahar;
+    }
+
+    /**
+     * Add ogretmenler2025Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Guz
+     *
+     * @return derslerdb
+     */
+    public function addOgretmenler2025Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Guz)
+    {
+        $this->ogretmenler_2025_guz[] = $ogretmenler2025Guz;
+
+        return $this;
+    }
+
+    /**
+     * Remove ogretmenler2025Guz
+     *
+     * @param \AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Guz
+     */
+    public function removeOgretmenler2025Guz(\AppBundle\Entity\ogretim_gorevlisidb $ogretmenler2025Guz)
+    {
+        $this->ogretmenler_2025_guz->removeElement($ogretmenler2025Guz);
+    }
+
+    /**
+     * Get ogretmenler2025Guz
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getOgretmenler2025Guz()
+    {
+        return $this->ogretmenler_2025_guz;
     }
 }

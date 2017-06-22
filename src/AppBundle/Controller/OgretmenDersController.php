@@ -1,9 +1,7 @@
 <?php
 
 namespace AppBundle\Controller;
-
 use AppBundle\Entity\ogretim_gorevlisidb;
-
 use Doctrine\ORM\Mapping\MappingException;
 use Doctrine\DBAL\Exception\ConnectionException;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
