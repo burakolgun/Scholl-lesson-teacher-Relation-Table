@@ -5,7 +5,7 @@
     <table class="table table-hover small">
        <thead>
        <tr>
-       <th>Toplam Ders Sayisi= {{ i }}</th>
+
        
        </tr>
        <tr>
@@ -61,8 +61,8 @@
 
 
   <td>
-    {% if ders.ogretmenler.count != 0 %}
-      {% for ogretmen in ders.ogretmenler %}
+    {% if ders.ogretmenler2017Guz.count != 0 %}
+      {% for ogretmen in ders.ogretmenler2017Guz %}
         {{ ogretmen.gorevliAd }}
         {{ ogretmen.gorevliSoyad }}
       {% endfor %}

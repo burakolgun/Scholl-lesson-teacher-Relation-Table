@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7ce68f47-23a0-4142-97c2-e434b87e2983" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_ders_hocaekle.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_ders_hocaekle.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolumler.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolumler.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/BolumlerController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/BolumlerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/dersler.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/dersler.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DerslerController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DerslerController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,28 +36,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bolum_detay.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay.html.twig">
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="115" column="22" lean-forward="false" selection-start-line="115" selection-start-column="22" selection-end-line="115" selection-end-column="22" />
+            <state relative-caret-position="368">
+              <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
               <folding>
-                <element signature="e#2948#2964#0#Twig" expanded="true" />
-                <element signature="e#3694#3710#0#Twig" expanded="true" />
-                <element signature="e#4178#4199#0#Twig" expanded="true" />
+                <element signature="e#1181#1188#0#Twig" expanded="true" />
+                <element signature="e#1250#1257#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bolum_ders_hocaekle.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_ders_hocaekle.html.twig">
+      <file leaf-file-name="dersler.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/dersler.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
-              <folding>
-                <element signature="e#12#26#0#Twig" expanded="false" />
-              </folding>
+            <state relative-caret-position="64">
+              <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="derslerdb.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/derslerdb.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,29 +72,36 @@
       <file leaf-file-name="BolumlerController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BolumlerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5">
-              <caret line="562" column="42" lean-forward="false" selection-start-line="562" selection-start-column="42" selection-end-line="562" selection-end-column="42" />
+            <state relative-caret-position="225">
+              <caret line="492" column="0" lean-forward="false" selection-start-line="492" selection-start-column="0" selection-end-line="492" selection-end-column="0" />
               <folding>
                 <element signature="e#40#69#0#PHP" expanded="true" />
-                <element signature="e#877#896#1#PHP" expanded="true" />
-                <element signature="e#7918#7937#1#PHP" expanded="true" />
-                <element signature="e#9497#9516#1#PHP" expanded="true" />
-                <element signature="e#10795#10826#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bolumler.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolumler.html.twig">
+      <file leaf-file-name="bolumdb.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/bolumdb.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="25" column="121" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="121" />
+            <state relative-caret-position="16">
+              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DerslerController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DerslerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
               <folding>
-                <element signature="e#12#26#0#Twig" expanded="false" />
-                <element signature="e#241#251#0#Twig" expanded="false" />
-                <element signature="n#style#0;n#th#2;n#tr#1;n#thead#0;n#table#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#3;n#tr#1;n#thead#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="e#635#656#1#PHP" expanded="true" />
+                <element signature="e#766#785#1#PHP" expanded="true" />
+                <element signature="e#5231#5252#1#PHP" expanded="true" />
+                <element signature="e#9218#9239#1#PHP" expanded="true" />
+                <element signature="e#10329#10350#1#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,7 +162,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/default/Teachers_Pages/ogretmenDers.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/ders_sil.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/ders_yarat.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Teachers_Pages/ogretmenler.html.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/ders_detay.html.twig" />
@@ -157,25 +169,26 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/IndexController.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/dersler.html.twig" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Teachers_Pages/ogretmen_dersler.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolumDuzenle.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Teachers_Pages/ogretmen_duzenle.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/ders_duzenle.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/ErrorPages/SqlConnectionError.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/ErrorPages/404ErrorPage.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/OgretmenDersController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/ogretim_gorevlisidb.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/derslerdb.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DerslerController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolumler.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_ders_hocaekle.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/BolumlerController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_ders_hocaekle_2019_bahar.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay_2019_bahar.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DerslerController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/dersler.html.twig" />
       </list>
     </option>
   </component>
@@ -249,7 +262,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -522,6 +534,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -556,7 +569,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html.twig">
+    <configuration default="false" name="index.html.twig" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://sorubank2.ege.edu.tr/app/Resources/views/default/index.html.twig">
+      <method />
+    </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -624,6 +640,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html.twig" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html.twig" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -670,19 +694,19 @@
       <workItem from="1497551059503" duration="3483000" />
       <workItem from="1497618946358" duration="82000" />
       <workItem from="1498132527003" duration="3215000" />
-      <workItem from="1498148637874" duration="7839000" />
+      <workItem from="1498148637874" duration="8102000" />
+      <workItem from="1498207467833" duration="1733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124416000" />
+    <option name="totallyTimeSpent" value="126412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31017193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32808024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3144699" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -899,20 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/dersler.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1232">
-          <caret line="77" column="6" lean-forward="false" selection-start-line="77" selection-start-column="6" selection-end-line="77" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Container.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4527">
@@ -938,13 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/bolumdb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Teachers_Pages/ogretmen_dersler.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -956,13 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="89" lean-forward="false" selection-start-line="5" selection-start-column="89" selection-end-line="5" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -998,96 +994,103 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2806">
           <caret line="411" column="0" lean-forward="false" selection-start-line="411" selection-start-column="0" selection-end-line="411" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/derslerdb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="71" column="13" lean-forward="false" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="35" />
-          <folding>
-            <element signature="e#36#68#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DerslerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="174" column="5" lean-forward="false" selection-start-line="174" selection-start-column="5" selection-end-line="174" selection-end-column="5" />
-          <folding>
-            <element signature="e#635#656#1#PHP" expanded="false" />
-            <element signature="e#765#784#1#PHP" expanded="false" />
-            <element signature="e#5229#5250#1#PHP" expanded="false" />
-            <element signature="e#9216#9237#1#PHP" expanded="false" />
-            <element signature="e#10327#10348#1#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolumler.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="400">
           <caret line="25" column="121" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="121" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="false" />
-            <element signature="e#241#251#0#Twig" expanded="false" />
-            <element signature="n#style#0;n#th#2;n#tr#1;n#thead#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#3;n#tr#1;n#thead#0;n#table#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_ders_hocaekle.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
+        <state relative-caret-position="352">
           <caret line="22" column="62" lean-forward="false" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_ders_hocaekle_2019_bahar.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay_2019_bahar.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_ders_hocaekle_2019_bahar.html.twig" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay_2019_bahar.html.twig" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BolumlerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5">
-          <caret line="562" column="42" lean-forward="false" selection-start-line="562" selection-start-column="42" selection-end-line="562" selection-end-column="42" />
+        <state relative-caret-position="16">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
-            <element signature="e#40#69#0#PHP" expanded="true" />
-            <element signature="e#877#896#1#PHP" expanded="true" />
-            <element signature="e#7918#7937#1#PHP" expanded="true" />
-            <element signature="e#9497#9516#1#PHP" expanded="true" />
-            <element signature="e#10795#10826#1#PHP" expanded="true" />
+            <element signature="e#82#106#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Department_Pages/bolum_detay.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="16">
           <caret line="115" column="22" lean-forward="false" selection-start-line="115" selection-start-column="22" selection-end-line="115" selection-end-column="22" />
           <folding>
-            <element signature="e#2948#2964#0#Twig" expanded="true" />
-            <element signature="e#3694#3710#0#Twig" expanded="true" />
             <element signature="e#4178#4199#0#Twig" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="41" column="36" lean-forward="false" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding>
+            <element signature="e#1181#1188#0#Twig" expanded="true" />
+            <element signature="e#1250#1257#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DerslerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding>
+            <element signature="e#635#656#1#PHP" expanded="true" />
+            <element signature="e#766#785#1#PHP" expanded="true" />
+            <element signature="e#5231#5252#1#PHP" expanded="true" />
+            <element signature="e#9218#9239#1#PHP" expanded="true" />
+            <element signature="e#10329#10350#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/derslerdb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="41" column="33" lean-forward="false" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/Lectures_Pages/dersler.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BolumlerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="492" column="0" lean-forward="false" selection-start-line="492" selection-start-column="0" selection-end-line="492" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/bolumdb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

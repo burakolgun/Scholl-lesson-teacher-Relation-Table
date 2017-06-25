@@ -25,10 +25,12 @@ class DerslerController extends Controller
         $dersler = $em
             ->getRepository('AppBundle:derslerdb')
             ->findAll();
+
         $i = count($dersler);
         $bolumler = $em
             ->getRepository('AppBundle:bolumdb')
             ->findAll();
+
         return $this
             -> render(':default/Lectures_Pages:dersler.html.twig' , array(
                 'dersler' => $dersler ,
