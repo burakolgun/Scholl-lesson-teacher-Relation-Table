@@ -6,42 +6,39 @@
             <th>Bölüm Adı</th>
             <th>Bölüm Period</th>
             <th colspan="5"><a href="{{ path('bolum_ekle') }}" class="btn btn-success btn-sm" style="width:100%;">Bölüm Ekle </a> </th>
-
         </tr>
         <tr>
             <th> </th>
             <th> </th>
-
             <th colspan="2" class="" style="text-align: center">DERSLER 2017 GÜZ </th>
             <th colspan="2" class="" style="text-align: center">DERSLER 2018 BAHAR </th>
-
         </tr>
         </thead>
         <tbody>
         {% for bolum in bolumler %}
-        <tr>
-            <td>{{ bolum.departmentName  }}</td>
-            <td><b>{{ bolum.period  | upper}}</b></td>
-            <td>
-            <a href="{{ path('bolum_detay', {'id': bolum.id, 'donem_id': 1 ,'semester_id': 'ders.Ogretmenler2017Guz'}) }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">1.Sınıf Güz</a>
-        </td>
-            <td>
-                <a href="{{ path('bolum_detay', {'id': bolum.id, 'donem_id': 3 ,'semester_id': 'ders.Ogretmenler2017Guz'}) }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">2.Sınıf Güz</a>
-            </td>
-            <td>
-                <a href="{{ path('bolum_detay', {'id': bolum.id, 'donem_id': 2 ,'semester_id': 'ders.Ogretmenler2018Bahar'}) }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">1.Sınıf Bahar</a>
-            </td>
-
-            <td>
-                <a href="{{ path('bolum_detay', {'id': bolum.id, 'donem_id': 4 ,'semester_id': 'ders.Ogretmenler2018Bahar'}) }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">2.Sınıf Bahar</a>
-            </td>
-        <td>
-            <a href="/bolum_duzenle/{{ bolum.id }}" class="btn btn-warning btn-sm col-xs-12 col-sm-12 col-md-12 ">Bölüm Düzenle</a>
-            </td>
-        </tr>
+            <tr>
+                <td>{{ bolum.departmentName  }}</td>
+                <td><b>{{ bolum.period  | upper}}</b></td>
+                <td>
+                    <a href="{{ path('bolum_detay', {'id': bolum.id, 'donem_id': 1 ,'semester_id': 'ders.Ogretmenler2017Guz'}) }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">1.Sınıf Güz</a>
+                </td>
+                <td>
+                    <a href="{{ path('bolum_detay', {'id': bolum.id, 'donem_id': 3 ,'semester_id': 'ders.Ogretmenler2017Guz'}) }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">2.Sınıf Güz</a>
+                </td>
+                <td>
+                    <a href="{{ path('bolum_detay', {'id': bolum.id, 'donem_id': 2 ,'semester_id': 'ders.Ogretmenler2018Bahar'}) }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">1.Sınıf Bahar</a>
+                </td>
+                <td>
+                    <a href="{{ path('bolum_detay', {'id': bolum.id, 'donem_id': 4 ,'semester_id': 'ders.Ogretmenler2018Bahar'}) }}" class="btn btn-primary btn-sm col-xs-12 col-sm-12 col-md-12 ">2.Sınıf Bahar</a>
+                </td>
+                <td>
+                    <a href="/bolum_duzenle/{{ bolum.id }}" class="btn btn-warning btn-sm col-xs-12 col-sm-12 col-md-12 ">Bölüm Düzenle</a>
+                </td>
+            </tr>
         {% endfor %}
         </tbody>
-    </table>{% endblock %}
+    </table>
+{% endblock %}
 
 
 
